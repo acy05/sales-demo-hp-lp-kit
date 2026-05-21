@@ -14,65 +14,78 @@
           <a class="brand" href="./index.html"><span class="brand-mark">C</span><span>Chat Convert</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#inbox">Inbox</a>
-            <a href="#automation">自動化</a>
+            <a href="#problem">課題</a>
+            <a href="#demo">デモ</a>
             <a href="#contact">診断</a>
           </nav>
         </div>
       </header>
 
-      <main class="experience-main bot-inbox">
-        <section class="bot-console" id="inbox">
-          <aside class="bot-list">
-            <span class="kicker-line"><i data-lucide="messages-square"></i> Support inbox demo</span>
-            <h1>訪問者チャットと担当者Inboxを同時に見せる導入LP</h1>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
-            <div class="bot-ticket active"><span>新規</span><strong>料金を知りたいです</strong><small>30秒前</small></div>
-            <div class="bot-ticket"><span>有人</span><strong>予約受付の導入相談</strong><small>4分前</small></div>
-            <div class="bot-ticket"><span>解決</span><strong>営業時間の確認</strong><small>12分前</small></div>
-          </aside>
-
-          <div class="bot-thread">
-            <div class="bot-thread-head">
-              <div><strong>Visitor #1284</strong><span>LP / 料金セクションから流入</span></div>
-              <span class="bot-status">自動応答中</span>
-            </div>
-            <div class="bot-message visitor">チャットボットの導入費用を知りたいです。</div>
-            <div class="bot-message agent">月間問い合わせ数と用途によって変わります。まず目的を選んでください。</div>
-            <div class="bot-choice-grid">
-              <button type="button">FAQ削減</button>
-              <button type="button">予約受付</button>
-              <button type="button">資料請求</button>
-            </div>
-            <div class="bot-composer">質問を入力 <i data-lucide="send"></i></div>
-          </div>
-
-          <aside class="bot-automation" id="automation">
-            <h2>Bot workflow</h2>
-            <div class="bot-node"><span>Trigger</span><strong>料金ページで30秒滞在</strong></div>
-            <div class="bot-node"><span>Ask</span><strong>用途と月間件数を確認</strong></div>
-            <div class="bot-node"><span>Route</span><strong>高温度は担当者へ通知</strong></div>
-            <div class="bot-metrics">
-              <div><strong>18秒</strong><span>平均初回応答</span></div>
-              <div><strong>34%</strong><span>フォーム遷移</span></div>
-            </div>
-          </aside>
-        </section>
-
-        <section class="bot-playbook">
+      <main class="page-v3 chatbot-lp-v3">
+        <section class="lp-hero chatbot-lp-hero">
           <div>
-            <p class="section-label">Conversation playbook</p>
-            <h2>ページごとに会話を変える</h2>
-            <p>AIサポートやチャットInboxの構成を参考に、チャットウィジェット単体ではなく、担当者が受け取るInboxまで見せる構成にしました。</p>
+            <span class="kicker-line"><i data-lucide="messages-square"></i> Chatbot conversion LP</span>
+            <h1>問い合わせ対応を、売上につながる受付に変える</h1>
+            <p>同じ質問への返信、営業時間外の取りこぼし、フォーム未送信を減らし、相談内容を担当者が追える状態にします。</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
+              <a class="button secondary" href="#contact"><i data-lucide="file-check-2"></i> 無料診断へ</a>
+            </div>
           </div>
-          <div class="bot-playbook-table">
-            <div><strong>料金ページ</strong><span>予算、件数、導入時期を確認</span></div>
-            <div><strong>採用ページ</strong><span>職種、働き方、応募不安を確認</span></div>
-            <div><strong>予約ページ</strong><span>希望日時、メニュー、緊急度を確認</span></div>
+          <aside class="chatbot-lp-result">
+            <div><strong>18秒</strong><span>平均初回応答</span></div>
+            <div><strong>34%</strong><span>フォーム遷移</span></div>
+            <div><strong>有人</strong><span>高温度だけ通知</span></div>
+          </aside>
+        </section>
+
+        <section class="chatbot-lp-problem" id="problem">
+          <div>
+            <p class="section-label">Problem</p>
+            <h2>返信が遅れるほど、問い合わせは消えていく</h2>
+          </div>
+          <div class="lp-card-grid">
+            <article><h3>同じ質問に時間を取られる</h3><p>料金、営業時間、対応範囲などの定型対応が積み上がります。</p></article>
+            <article><h3>フォーム前に離脱する</h3><p>何を書けばいいかわからず、相談前にページを閉じられます。</p></article>
+            <article><h3>担当者への共有が薄い</h3><p>問い合わせの温度感や背景が残らず、返信品質がばらつきます。</p></article>
           </div>
         </section>
 
-        <section class="bot-contact" id="contact">
+        <section class="chatbot-lp-demo" id="demo">
+          <div class="chatbot-lp-demo-copy">
+            <p class="section-label">Product view</p>
+            <h2>見せ場は、訪問者チャットと担当者Inbox</h2>
+            <p>チャットウィジェットだけでなく、担当者が受け取る会話一覧と自動化フローまで見せることで、導入後の運用が伝わります。</p>
+          </div>
+          <div class="chatbot-lp-inbox">
+            <aside>
+              <strong>Inbox</strong>
+              <div class="active">料金を知りたいです</div>
+              <div>予約受付の導入相談</div>
+              <div>営業時間の確認</div>
+            </aside>
+            <div class="chatbot-lp-thread">
+              <p class="visitor">導入費用を知りたいです。</p>
+              <p class="agent">月間問い合わせ数と用途によって変わります。目的を選んでください。</p>
+              <div><span>FAQ削減</span><span>予約受付</span><span>資料請求</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="chatbot-lp-flow">
+          <div>
+            <p class="section-label">Flow</p>
+            <h2>導入は4ステップ</h2>
+          </div>
+          <ol>
+            <li><span>01</span><strong>質問を洗い出す</strong><p>よくある質問とフォーム前の不安を整理します。</p></li>
+            <li><span>02</span><strong>会話を作る</strong><p>回答、追加質問、有人引き継ぎを分けます。</p></li>
+            <li><span>03</span><strong>ページへ設置</strong><p>目的に合わせて入口とCTAを調整します。</p></li>
+            <li><span>04</span><strong>数字を見る</strong><p>質問数、遷移率、有人通知数を改善します。</p></li>
+          </ol>
+        </section>
+
+        <section class="chatbot-lp-contact" id="contact">
           <div>
             <p class="section-label">Free check</p>
             <h2>導入できる問い合わせを無料診断</h2>

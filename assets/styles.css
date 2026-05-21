@@ -3848,3 +3848,983 @@ textarea {
     min-height: 300px;
   }
 }
+
+/* V3: LP/HP-appropriate layouts with LazyWeb-inspired modules as page sections. */
+.page-v3 {
+  width: 100%;
+  background: #f7fbfc;
+}
+
+.page-v3 section {
+  width: min(1120px, calc(100vw - 32px));
+  margin-inline: auto;
+}
+
+.page-v3 h1,
+.page-v3 h2,
+.page-v3 h3,
+.page-v3 p {
+  letter-spacing: 0;
+}
+
+.page-v3 h1 {
+  margin: 14px 0 18px;
+  font-size: clamp(2.45rem, 5vw, 4.45rem);
+  line-height: 1;
+}
+
+.page-v3 h2 {
+  margin: 8px 0 14px;
+  font-size: clamp(1.85rem, 3vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.page-v3 p {
+  color: var(--muted);
+  line-height: 1.78;
+  font-weight: 680;
+}
+
+.page-v3 svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.lp-hero {
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: 36px;
+  align-items: center;
+  padding: 76px 0;
+}
+
+.lp-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.lp-card-grid article {
+  padding: 22px;
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.lp-card-grid h3 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+}
+
+.lp-card-grid p {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.ai-hp-v3 {
+  background: linear-gradient(180deg, #f7fbfa 0%, #eaf2ef 100%);
+}
+
+.ai-hp-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(340px, 0.82fr);
+  gap: 36px;
+  align-items: center;
+  padding: 78px 0 40px;
+}
+
+.ai-hp-copy p {
+  max-width: 680px;
+  font-size: 1.08rem;
+}
+
+.ai-hp-console {
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 26px;
+  background: white;
+  padding: 22px;
+  box-shadow: 0 24px 70px rgba(15, 55, 50, 0.14);
+}
+
+.ai-hp-console-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #0f766e;
+  font-weight: 880;
+}
+
+.ai-hp-query {
+  margin: 20px 0;
+  padding: 18px;
+  border-radius: 18px;
+  background: #edf7f5;
+  color: #173d39;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.ai-hp-brief {
+  display: grid;
+  gap: 10px;
+}
+
+.ai-hp-brief div,
+.ai-hp-trust div,
+.ai-hp-service-grid article,
+.ai-hp-case-list article {
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.ai-hp-brief div {
+  padding: 14px;
+  display: grid;
+  gap: 5px;
+}
+
+.ai-hp-brief span,
+.ai-hp-trust span,
+.ai-hp-case-list span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 780;
+}
+
+.ai-hp-trust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 0 0 64px;
+}
+
+.ai-hp-trust div {
+  padding: 22px;
+}
+
+.ai-hp-trust strong {
+  display: block;
+  color: #0f766e;
+  font-size: 2rem;
+}
+
+.ai-hp-services,
+.ai-hp-cases,
+.ai-hp-contact,
+.salon-hp-menu,
+.salon-hp-first,
+.salon-hp-reserve,
+.reform-hp-works,
+.reform-hp-process,
+.reform-hp-request,
+.chatbot-lp-problem,
+.chatbot-lp-flow,
+.chatbot-lp-contact,
+.sns-lp-problem,
+.sns-lp-service,
+.sns-lp-contact,
+.recruit-lp-roles,
+.recruit-lp-culture,
+.recruit-lp-journey,
+.recruit-lp-entry {
+  padding: 70px 0;
+}
+
+.ai-hp-service-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.ai-hp-service-grid article {
+  padding: 24px;
+}
+
+.ai-hp-service-grid i,
+.ai-hp-service-grid svg {
+  color: #0f766e;
+}
+
+.ai-hp-cases {
+  display: grid;
+  grid-template-columns: 0.82fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.ai-hp-case-list {
+  display: grid;
+  gap: 12px;
+}
+
+.ai-hp-case-list article {
+  padding: 18px;
+}
+
+.ai-hp-case-list strong {
+  display: block;
+  margin: 7px 0;
+  font-size: 1.15rem;
+}
+
+.ai-hp-case-list p {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.ai-hp-contact,
+.salon-hp-reserve,
+.reform-hp-request,
+.chatbot-lp-contact,
+.sns-lp-contact,
+.recruit-lp-entry {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.salon-hp-v3 {
+  background: #fff8f5;
+}
+
+.salon-hp-hero {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.72fr);
+  gap: 0;
+  align-items: stretch;
+  padding: 0;
+}
+
+.salon-hp-photo {
+  min-height: 640px;
+}
+
+.salon-hp-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.salon-hp-copy {
+  padding: 76px max(24px, calc((100vw - 1120px) / 2)) 76px 42px;
+  display: grid;
+  align-content: center;
+  background: #fff8f5;
+}
+
+.salon-hp-copy h1 {
+  font-size: clamp(2.35rem, 4.4vw, 4rem);
+}
+
+.salon-hp-booking {
+  margin-top: 24px;
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid rgba(169, 79, 69, 0.16);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.salon-hp-booking div {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border: 1px solid rgba(169, 79, 69, 0.14);
+  border-radius: var(--radius);
+  color: #68423d;
+  background: #fff4f0;
+  font-weight: 820;
+}
+
+.salon-hp-menu {
+  display: grid;
+  gap: 24px;
+}
+
+.salon-hp-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.salon-hp-menu-grid article {
+  overflow: hidden;
+  border: 1px solid rgba(169, 79, 69, 0.14);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.salon-hp-menu-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.salon-hp-menu-grid strong,
+.salon-hp-menu-grid span {
+  display: block;
+  padding-inline: 16px;
+}
+
+.salon-hp-menu-grid strong {
+  padding-top: 16px;
+  font-size: 1.25rem;
+}
+
+.salon-hp-menu-grid span {
+  padding-top: 6px;
+  padding-bottom: 18px;
+  color: var(--muted);
+  font-weight: 740;
+}
+
+.salon-hp-first {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.salon-hp-steps {
+  display: grid;
+  gap: 12px;
+}
+
+.salon-hp-steps div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid rgba(169, 79, 69, 0.14);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.salon-hp-steps span {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  background: #a94f45;
+  color: white;
+  font-weight: 900;
+}
+
+.salon-hp-steps p {
+  grid-column: 2;
+  margin: -4px 0 0;
+}
+
+.reform-hp-v3 {
+  background: #eef4ef;
+}
+
+.reform-hp-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(310px, 0.56fr);
+  gap: 30px;
+  align-items: center;
+  padding: 78px 0 48px;
+}
+
+.reform-hp-estimator {
+  padding: 24px;
+  border: 1px solid rgba(36, 92, 72, 0.16);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(#d9e7dc 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, #d9e7dc 1px, transparent 1px) 0 0 / 28px 28px,
+    #fffdf8;
+  box-shadow: var(--shadow);
+}
+
+.reform-hp-estimator h2 {
+  font-size: 1.45rem;
+}
+
+.reform-hp-estimator div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 13px;
+  border: 1px solid rgba(36, 92, 72, 0.14);
+  border-radius: var(--radius);
+  background: white;
+  font-weight: 820;
+}
+
+.reform-hp-estimator strong {
+  display: block;
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: #245c48;
+  color: white;
+  font-size: 2rem;
+}
+
+.reform-hp-estimator small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-weight: 760;
+}
+
+.reform-hp-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 0 0 62px;
+}
+
+.reform-hp-services article,
+.reform-hp-process li {
+  border: 1px solid rgba(36, 92, 72, 0.14);
+  border-radius: var(--radius);
+  background: #fffdf8;
+  box-shadow: var(--shadow-soft);
+}
+
+.reform-hp-services article {
+  padding: 22px;
+  display: grid;
+  gap: 9px;
+}
+
+.reform-hp-services svg {
+  color: #245c48;
+}
+
+.reform-hp-services span {
+  color: var(--muted);
+  font-weight: 740;
+}
+
+.reform-hp-works {
+  display: grid;
+  gap: 22px;
+}
+
+.reform-hp-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.reform-hp-work-grid article {
+  min-height: 360px;
+  padding: 22px;
+  display: grid;
+  align-content: end;
+  color: white;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.68)),
+    var(--image) center / cover;
+}
+
+.reform-hp-work-grid strong {
+  font-size: 1.45rem;
+}
+
+.reform-hp-process {
+  display: grid;
+  grid-template-columns: 0.72fr 1fr;
+  gap: 28px;
+}
+
+.reform-hp-process ol,
+.chatbot-lp-flow ol,
+.sns-lp-service ol,
+.recruit-lp-journey ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reform-hp-process li,
+.chatbot-lp-flow li,
+.sns-lp-service li,
+.recruit-lp-journey li {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 12px;
+  padding: 18px;
+}
+
+.reform-hp-process li span,
+.chatbot-lp-flow li span,
+.sns-lp-service li span,
+.recruit-lp-journey li span {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: white;
+  font-weight: 900;
+}
+
+.reform-hp-process li p,
+.chatbot-lp-flow li p,
+.sns-lp-service li p,
+.recruit-lp-journey li p {
+  grid-column: 2;
+  margin: -4px 0 0;
+}
+
+.chatbot-lp-v3 {
+  background: #eef7f8;
+}
+
+.chatbot-lp-hero {
+  min-height: 600px;
+}
+
+.chatbot-lp-result {
+  display: grid;
+  gap: 12px;
+}
+
+.chatbot-lp-result div {
+  padding: 24px;
+  border-radius: var(--radius);
+  background: #10262c;
+  color: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.chatbot-lp-result strong,
+.sns-lp-calendar-mini strong {
+  display: block;
+  font-size: 2rem;
+}
+
+.chatbot-lp-result span,
+.sns-lp-calendar-mini span {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 760;
+}
+
+.chatbot-lp-problem,
+.sns-lp-problem,
+.recruit-lp-culture {
+  display: grid;
+  gap: 24px;
+}
+
+.chatbot-lp-demo,
+.sns-lp-report {
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: 0.72fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.chatbot-lp-inbox {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  min-height: 420px;
+  border: 1px solid rgba(18, 124, 137, 0.16);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.chatbot-lp-inbox aside {
+  padding: 18px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  background: #10262c;
+  color: white;
+}
+
+.chatbot-lp-inbox aside div {
+  padding: 12px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 780;
+}
+
+.chatbot-lp-inbox aside .active {
+  background: white;
+  color: #10262c;
+}
+
+.chatbot-lp-thread {
+  padding: 24px;
+  display: grid;
+  align-content: center;
+  gap: 14px;
+}
+
+.chatbot-lp-thread p {
+  max-width: 78%;
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+}
+
+.chatbot-lp-thread .visitor {
+  justify-self: end;
+  color: white;
+  background: #127c89;
+}
+
+.chatbot-lp-thread .agent {
+  background: #eaf7f8;
+  color: #183b42;
+}
+
+.chatbot-lp-thread div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chatbot-lp-thread span {
+  padding: 10px 12px;
+  border: 1px solid rgba(18, 124, 137, 0.16);
+  border-radius: var(--radius);
+  color: #127c89;
+  font-weight: 820;
+}
+
+.chatbot-lp-flow,
+.sns-lp-service,
+.recruit-lp-journey {
+  display: grid;
+  grid-template-columns: 0.62fr 1fr;
+  gap: 28px;
+}
+
+.chatbot-lp-flow li,
+.sns-lp-service li,
+.recruit-lp-journey li {
+  border: 1px solid rgba(18, 124, 137, 0.14);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.sns-lp-v3 {
+  background: #fff6f8;
+}
+
+.sns-lp-hero {
+  min-height: 600px;
+}
+
+.sns-lp-calendar-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: #22182b;
+  box-shadow: var(--shadow);
+}
+
+.sns-lp-calendar-mini div {
+  min-height: 210px;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: grid;
+  align-content: space-between;
+}
+
+.sns-lp-report-copy,
+.chatbot-lp-demo-copy {
+  align-self: center;
+}
+
+.sns-lp-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid rgba(185, 56, 82, 0.14);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.sns-lp-week {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.sns-lp-week span,
+.sns-lp-week article {
+  min-height: 50px;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: #fff0f4;
+  font-weight: 820;
+}
+
+.sns-lp-week article {
+  min-height: 120px;
+  background: white;
+  border: 1px solid rgba(185, 56, 82, 0.14);
+}
+
+.sns-lp-dashboard aside {
+  display: grid;
+  gap: 8px;
+}
+
+.sns-lp-dashboard aside div {
+  padding: 14px;
+  border-radius: var(--radius);
+  background: #22182b;
+  color: white;
+}
+
+.sns-lp-dashboard aside strong {
+  display: block;
+  font-size: 1.45rem;
+}
+
+.sns-lp-dashboard aside span {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 760;
+}
+
+.sns-lp-service li {
+  border-color: rgba(185, 56, 82, 0.14);
+}
+
+.recruit-lp-v3 {
+  background: #f2f7fa;
+}
+
+.recruit-lp-photo-card {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.recruit-lp-photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.recruit-lp-photo-card div {
+  padding: 18px;
+  display: grid;
+  gap: 4px;
+}
+
+.recruit-lp-photo-card span {
+  color: var(--muted);
+  font-weight: 760;
+}
+
+.recruit-lp-roles {
+  display: grid;
+  gap: 22px;
+}
+
+.recruit-lp-job-board {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 14px;
+}
+
+.recruit-lp-job-board aside,
+.recruit-lp-job-board article {
+  border: 1px solid rgba(40, 95, 130, 0.14);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.recruit-lp-job-board aside {
+  padding: 18px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.recruit-lp-job-board label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #38546a;
+  font-weight: 780;
+}
+
+.recruit-lp-job-board > div {
+  display: grid;
+  gap: 10px;
+}
+
+.recruit-lp-job-board article {
+  padding: 18px;
+}
+
+.recruit-lp-job-board article.selected {
+  background: #285f82;
+  color: white;
+}
+
+.recruit-lp-job-board span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.recruit-lp-job-board article.selected span,
+.recruit-lp-job-board article.selected p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.recruit-lp-job-board h3 {
+  margin: 8px 0;
+  font-size: 1.4rem;
+}
+
+.recruit-lp-job-board p {
+  margin: 0;
+}
+
+.recruit-lp-journey li,
+.recruit-lp-entry,
+.recruit-lp-culture .lp-card-grid article {
+  border-color: rgba(40, 95, 130, 0.14);
+}
+
+@media (max-width: 980px) {
+  .lp-hero,
+  .ai-hp-hero,
+  .ai-hp-cases,
+  .ai-hp-contact,
+  .salon-hp-hero,
+  .salon-hp-first,
+  .salon-hp-reserve,
+  .reform-hp-hero,
+  .reform-hp-process,
+  .reform-hp-request,
+  .chatbot-lp-demo,
+  .chatbot-lp-flow,
+  .chatbot-lp-contact,
+  .sns-lp-report,
+  .sns-lp-service,
+  .sns-lp-contact,
+  .recruit-lp-journey,
+  .recruit-lp-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .salon-hp-photo {
+    min-height: 420px;
+  }
+
+  .salon-hp-copy {
+    padding: 42px max(16px, calc((100vw - 1120px) / 2));
+  }
+
+  .ai-hp-trust,
+  .ai-hp-service-grid,
+  .salon-hp-menu-grid,
+  .reform-hp-services,
+  .lp-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sns-lp-dashboard,
+  .recruit-lp-job-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-v3 section {
+    width: min(100vw - 24px, 1120px);
+  }
+
+  .lp-hero,
+  .ai-hp-hero,
+  .salon-hp-menu,
+  .salon-hp-first,
+  .salon-hp-reserve,
+  .reform-hp-hero,
+  .reform-hp-works,
+  .reform-hp-process,
+  .reform-hp-request,
+  .chatbot-lp-problem,
+  .chatbot-lp-demo,
+  .chatbot-lp-flow,
+  .chatbot-lp-contact,
+  .sns-lp-problem,
+  .sns-lp-report,
+  .sns-lp-service,
+  .sns-lp-contact,
+  .recruit-lp-roles,
+  .recruit-lp-culture,
+  .recruit-lp-journey,
+  .recruit-lp-entry {
+    padding: 48px 0;
+  }
+
+  .salon-hp-photo {
+    min-height: 300px;
+  }
+
+  .reform-hp-work-grid,
+  .sns-lp-calendar-mini,
+  .sns-lp-week {
+    grid-template-columns: 1fr;
+  }
+
+  .chatbot-lp-inbox {
+    grid-template-columns: 1fr;
+  }
+
+  .chatbot-lp-thread p {
+    max-width: 94%;
+  }
+
+  .reform-hp-process li,
+  .chatbot-lp-flow li,
+  .sns-lp-service li,
+  .recruit-lp-journey li,
+  .salon-hp-steps div {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .reform-hp-process li span,
+  .chatbot-lp-flow li span,
+  .sns-lp-service li span,
+  .recruit-lp-journey li span,
+  .salon-hp-steps span {
+    width: 46px;
+    height: 46px;
+  }
+}
