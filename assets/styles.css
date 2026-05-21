@@ -57,6 +57,13 @@ textarea {
   --surface-2: #fff4f0;
 }
 
+.theme-ai {
+  --accent: #0f766e;
+  --accent-2: #e56b2f;
+  --accent-3: #2f66b3;
+  --surface-2: #eef6f5;
+}
+
 .theme-reform {
   --accent: #245c48;
   --accent-2: #d47a38;
@@ -383,6 +390,302 @@ textarea {
   color: var(--muted);
   font-size: 0.92rem;
   font-weight: 700;
+}
+
+.reference-panel {
+  padding: 58px 0;
+  background: rgba(255, 255, 255, 0.74);
+  border-bottom: 1px solid rgba(201, 216, 220, 0.74);
+}
+
+.reference-panel-inner {
+  width: var(--content);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.reference-copy {
+  display: grid;
+  gap: 14px;
+}
+
+.reference-copy h2 {
+  margin: 0;
+  font-size: 2.35rem;
+  line-height: 1.08;
+}
+
+.reference-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+  font-weight: 650;
+}
+
+.mock-dashboard {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  min-height: 310px;
+  padding: 20px;
+  border: 1px solid rgba(16, 20, 23, 0.12);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 9%, white), white 58%),
+    #ffffff;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.mock-dashboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(16, 20, 23, 0.08) 1px, transparent 1.1px) 0 0 / 20px 20px;
+  opacity: 0.42;
+}
+
+.mock-dashboard > * {
+  position: relative;
+  z-index: 1;
+}
+
+.mock-topline,
+.booking-search,
+.estimate-input,
+.job-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--muted);
+  font-weight: 780;
+}
+
+.mock-topline strong {
+  color: var(--accent);
+}
+
+.mock-search {
+  padding: 16px 18px;
+  color: var(--ink);
+  background: #101417;
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 850;
+}
+
+.assistant-flow,
+.booking-pros,
+.estimate-grid,
+.planner-posts,
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.assistant-flow div,
+.booking-pros div,
+.estimate-grid div,
+.planner-posts div,
+.job-list div,
+.agent-inbox,
+.visitor-chat {
+  display: grid;
+  gap: 7px;
+  min-height: 112px;
+  padding: 14px;
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.assistant-flow span,
+.booking-pros span,
+.estimate-grid span,
+.planner-posts span,
+.job-list span,
+.agent-inbox span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 760;
+}
+
+.assistant-flow strong,
+.booking-pros strong,
+.estimate-grid strong,
+.planner-posts strong,
+.job-list strong,
+.agent-inbox strong {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+.assistant-flow em,
+.agent-inbox em {
+  color: var(--accent);
+  font-style: normal;
+  font-size: 0.84rem;
+  font-weight: 820;
+}
+
+.integration-strip,
+.booking-categories,
+.estimate-steps,
+.planner-week,
+.planner-metrics,
+.values-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.integration-strip span,
+.booking-categories span,
+.estimate-steps span,
+.planner-week span,
+.planner-metrics span,
+.values-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, white);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 8%, white);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.booking-search {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.booking-search span,
+.estimate-input,
+.job-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.estimate-grid div:first-child {
+  background:
+    linear-gradient(rgba(16, 20, 23, 0.48), rgba(16, 20, 23, 0.48)),
+    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=70") center / cover;
+  color: white;
+}
+
+.estimate-grid div:first-child span,
+.estimate-grid div:first-child strong {
+  color: white;
+}
+
+.estimate-grid div:last-child {
+  background:
+    linear-gradient(rgba(15, 118, 110, 0.3), rgba(15, 118, 110, 0.3)),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=70") center / cover;
+  color: white;
+}
+
+.estimate-grid div:last-child span,
+.estimate-grid div:last-child strong {
+  color: white;
+}
+
+.chat-product {
+  grid-template-columns: minmax(180px, 0.8fr) minmax(240px, 1fr);
+  align-items: stretch;
+}
+
+.visitor-chat {
+  align-content: start;
+  background: #f7fbfc;
+}
+
+.visitor-chat p {
+  width: fit-content;
+  max-width: 88%;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: white;
+  border: 1px solid var(--soft-line);
+  line-height: 1.5;
+}
+
+.visitor-chat p:nth-child(2) {
+  margin-left: auto;
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.visitor-chat div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.visitor-chat div span {
+  padding: 8px 10px;
+  border: 1px solid var(--soft-line);
+  border-radius: 999px;
+  background: white;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 760;
+}
+
+.planner-dashboard {
+  grid-template-rows: auto 1fr auto;
+}
+
+.planner-week {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.planner-week span {
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.planner-posts div {
+  min-height: 132px;
+  align-content: space-between;
+}
+
+.planner-posts div:nth-child(2) {
+  background: color-mix(in srgb, var(--accent-2) 10%, white);
+}
+
+.planner-posts div:nth-child(3) {
+  background: color-mix(in srgb, var(--accent-3) 10%, white);
+}
+
+.job-list {
+  grid-template-columns: 1fr;
+}
+
+.job-list div {
+  min-height: auto;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .section {
@@ -1004,7 +1307,31 @@ textarea {
   .split,
   .section-head,
   .grid-2,
+  .reference-panel-inner,
   .demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-panel-inner {
+    gap: 24px;
+  }
+
+  .reference-copy h2 {
+    font-size: 2.08rem;
+  }
+
+  .mock-dashboard {
+    min-height: auto;
+  }
+
+  .assistant-flow,
+  .booking-pros,
+  .estimate-grid,
+  .planner-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-product {
     grid-template-columns: 1fr;
   }
 
@@ -1113,6 +1440,35 @@ textarea {
 
   .section {
     padding: 58px 0;
+  }
+
+  .reference-panel {
+    padding: 42px 0;
+  }
+
+  .reference-copy h2 {
+    font-size: 1.74rem;
+  }
+
+  .mock-dashboard {
+    padding: 14px;
+  }
+
+  .mock-topline,
+  .estimate-input,
+  .job-search {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .planner-week {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .job-list div {
+    grid-template-columns: 1fr;
   }
 
   .band h2 {
