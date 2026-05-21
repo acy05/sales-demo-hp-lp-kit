@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>リフォーム会社HPデモ</title>
+    <meta name="description" content="地域リフォーム会社向けの見積もり相談チャット付きHPデモ。">
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body class="theme-reform">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="./index.html"><span class="brand-mark">R</span><span>Ridge Reform Works</span></a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
+          <nav class="navlinks" data-nav>
+            <a href="#works">対応工事</a>
+            <a href="#survey">現地調査</a>
+            <a href="#estimate">見積相談</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <span class="eyebrow"><i data-lucide="hammer"></i> Reform estimate demo</span>
+            <h1>写真を送る前の不安を、見積相談に変える</h1>
+            <p>キッチン、浴室、外壁、内装の相談をチャットで一次整理。現地調査前に必要な情報を揃える地域リフォーム会社向けHPデモです。</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 概算を相談する</button>
+              <a class="button secondary" href="#estimate"><i data-lucide="clipboard-pen"></i> 見積フォームへ</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="住宅リフォームの施工現場">
+            <div class="floating-note">
+              <strong>現地調査前に情報を回収</strong>
+              <span>場所、築年数、希望時期、写真有無をチャットで整理してから担当者へ渡します。</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="proofbar" aria-label="相談実績">
+          <div class="proofbar-inner">
+            <div class="proof-item"><strong>住宅</strong><span>水回りから外装まで</span></div>
+            <div class="proof-item"><strong>写真</strong><span>送付前の相談対応</span></div>
+            <div class="proof-item"><strong>補助</strong><span>対象可能性を確認</span></div>
+            <div class="proof-item"><strong>地域</strong><span>訪問エリアを案内</span></div>
+          </div>
+        </section>
+
+        <section class="section alt" id="works">
+          <div class="section-inner">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow"><i data-lucide="home"></i> Works</span>
+                <h2>相談内容ごとに、必要情報を変える</h2>
+              </div>
+              <p>工事の種類によって聞くべき項目は違います。チャットで一次整理して、担当者の確認漏れを減らします。</p>
+            </div>
+            <div class="grid-3">
+              <article class="feature-card">
+                <i data-lucide="shower-head"></i>
+                <h3>水回り</h3>
+                <p>設備交換、漏水、老朽化、希望グレードを事前に確認します。</p>
+              </article>
+              <article class="feature-card">
+                <i data-lucide="paintbrush"></i>
+                <h3>内装</h3>
+                <p>部屋数、床面積、素材の希望、生活しながら工事できるかを整理します。</p>
+              </article>
+              <article class="feature-card">
+                <i data-lucide="house-plus"></i>
+                <h3>外壁・屋根</h3>
+                <p>築年数、劣化状況、雨漏り有無、点検希望日を聞き取ります。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="survey">
+          <div class="section-inner split">
+            <div>
+              <span class="eyebrow"><i data-lucide="map-pinned"></i> Survey</span>
+              <h2>現地調査の前に、訪問理由が明確になる</h2>
+              <div class="check-list">
+                <div class="check-item"><i data-lucide="check-circle-2"></i><span>相談箇所、築年数、緊急度をチャットで回収</span></div>
+                <div class="check-item"><i data-lucide="check-circle-2"></i><span>補助金・助成制度は最終確認前提で案内</span></div>
+                <div class="check-item"><i data-lucide="check-circle-2"></i><span>営業担当が折り返すべき温度感の高い相談を分ける</span></div>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1100&q=80" alt="施工担当者が図面を確認する様子">
+          </div>
+        </section>
+
+        <section class="section alt" id="estimate">
+          <div class="section-inner grid-2">
+            <div>
+              <span class="eyebrow"><i data-lucide="file-text"></i> Estimate</span>
+              <h2>概算相談から現地調査へつなげる</h2>
+              <p>概算だけを求める訪問者にも、必要条件を整理しながら次のアクションへ進めます。</p>
+            </div>
+            <form class="form-panel" data-demo-form>
+              <h3>見積もり相談フォーム</h3>
+              <div class="form-grid">
+                <label class="field">お名前<input type="text" placeholder="山田 太郎"></label>
+                <label class="field">工事場所<input type="text" placeholder="キッチン、浴室、外壁など"></label>
+                <label class="field">相談内容<textarea placeholder="築20年の浴室交換を検討中"></textarea></label>
+                <button class="button primary" type="submit"><i data-lucide="send"></i> 見積相談を送信</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <a href="./index.html">デモ一覧へ戻る</a>
+          <span>Ridge Reform Works demo</span>
+        </div>
+      </footer>
+    </div>
+    <div data-chatbot data-bot="reform"></div>
+    <script async src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" onload="window.lucide&&window.lucide.createIcons&&window.lucide.createIcons()"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
