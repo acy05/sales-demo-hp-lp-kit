@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>美容サロン予約HPデモ</title>
-    <meta name="description" content="美容サロン向けの予約導線とチャット相談付きHPデモ。">
+    <meta name="description" content="検索、カテゴリ、メニュー、口コミ、予約相談までを持つ美容サロン予約HPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-salon layout-salon">
@@ -14,67 +14,116 @@
           <a class="brand" href="./index.html"><span class="brand-mark">S</span><span>Sora Beauty Lounge</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#menu">メニュー</a>
-            <a href="#first">初回案内</a>
+            <a href="#categories">カテゴリ</a>
+            <a href="#services">メニュー</a>
             <a href="#reserve">予約</a>
           </nav>
         </div>
       </header>
 
-      <main class="page-v3 salon-hp-v3">
-        <section class="salon-hp-hero">
-          <div class="salon-hp-photo">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1300&q=80" alt="明るい美容サロンのセット面">
+      <main class="page-v4 salon-ref-v4">
+        <section class="salon-search-hero">
+          <div class="salon-hero-copy">
+            <span class="kicker-line"><i data-lucide="sparkles"></i> Book local self-care services</span>
+            <h1>今日行ける美容メニューを探して、そのまま予約相談</h1>
+            <p>施術内容、場所、日時を先に選べる予約検索型のHP。初めての来店でも、メニューと空き枠の不安を減らします。</p>
           </div>
-          <div class="salon-hp-copy">
-            <span class="kicker-line"><i data-lucide="scissors"></i> Hair care and first visit booking</span>
-            <h1>メニューを探して、そのまま初回予約へ進めるサロンHP</h1>
-            <p>雰囲気、メニュー、料金、空き枠を来店前に確認できるようにし、初めての人が迷わず予約相談へ進める構成です。</p>
-            <div class="salon-hp-booking" aria-label="予約検索">
-              <div><i data-lucide="search"></i><span>髪質改善・眉カット</span></div>
-              <div><i data-lucide="calendar"></i><span>今週末</span></div>
-              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> メニュー相談</button>
+          <form class="salon-search-box" data-demo-form aria-label="サロン予約検索">
+            <label><span>メニュー</span><input type="text" value="髪質改善・眉カット" aria-label="メニュー"></label>
+            <label><span>エリア</span><input type="text" value="表参道" aria-label="エリア"></label>
+            <label><span>日時</span><input type="text" value="今週末" aria-label="日時"></label>
+            <button class="button primary" type="submit"><i data-lucide="search"></i> 空き枠を探す</button>
+          </form>
+        </section>
+
+        <section class="salon-review-band" aria-label="口コミ">
+          <article><strong>4.9</strong><span>平均レビュー</span></article>
+          <article><strong>2,400+</strong><span>予約相談</span></article>
+          <article><strong>24h</strong><span>Web受付</span></article>
+          <article><strong>初回</strong><span>相談付きメニュー</span></article>
+        </section>
+
+        <section class="salon-categories" id="categories">
+          <div class="section-head-v4 center">
+            <span class="section-label">Browse by category</span>
+            <h2>やりたい施術から探せる</h2>
+          </div>
+          <div class="category-wheel">
+            <a href="#services"><i data-lucide="scissors"></i><strong>Hair</strong><span>カット・髪質改善</span></a>
+            <a href="#services"><i data-lucide="sparkles"></i><strong>Nail</strong><span>ケア・ジェル</span></a>
+            <a href="#services"><i data-lucide="eye"></i><strong>Brows</strong><span>眉・まつ毛</span></a>
+            <a href="#services"><i data-lucide="flower-2"></i><strong>Spa</strong><span>ヘッドスパ</span></a>
+            <a href="#services"><i data-lucide="palette"></i><strong>Makeup</strong><span>メイク相談</span></a>
+          </div>
+        </section>
+
+        <section class="salon-featured" id="services">
+          <div class="section-head-v4">
+            <span class="section-label">Featured services</span>
+            <h2>初回で選ばれやすいメニュー</h2>
+            <p>価格、所要時間、担当イメージがすぐ見えるカードで、迷わず予約相談へ進めます。</p>
+          </div>
+          <div class="service-carousel">
+            <article>
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="ヘアカットを受ける女性">
+              <div><span>90分 / 初回相談</span><h3>似合わせカット</h3><p>骨格と普段のセット時間に合わせて提案。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="スタイリング中の美容サロン">
+              <div><span>120分 / 集中ケア</span><h3>髪質改善トリートメント</h3><p>広がり、乾燥、うねりを来店前に確認。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="ネイルと美容の施術道具">
+              <div><span>45分 / 印象相談</span><h3>眉メイクデザイン</h3><p>顔立ちと仕事シーンに合わせて設計。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="salon-availability">
+          <div class="phone-preview" aria-label="予約画面プレビュー">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=80" alt="明るい美容サロンの席">
+            <div class="slot-panel">
+              <strong>本日の空き枠</strong>
+              <button type="button">13:30</button>
+              <button type="button">16:00</button>
+              <button type="button">18:30</button>
             </div>
           </div>
-        </section>
-
-        <section class="salon-hp-menu" id="menu">
           <div>
-            <p class="section-label">Menu</p>
-            <h2>悩み別に選べる初回メニュー</h2>
-          </div>
-          <div class="salon-hp-menu-grid">
-            <article><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=700&q=80" alt="髪質改善のイメージ"><strong>髪質改善</strong><span>120分 / カウンセリング付き</span></article>
-            <article><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=80" alt="眉メイクのイメージ"><strong>眉・メイク</strong><span>45分 / 印象相談</span></article>
-            <article><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="ヘアスタイリングのイメージ"><strong>似合わせ相談</strong><span>60分 / 写真持ち込みOK</span></article>
-          </div>
-        </section>
-
-        <section class="salon-hp-first" id="first">
-          <div class="salon-hp-first-copy">
-            <p class="section-label">First visit</p>
-            <h2>初めてでも来店前に不安を減らせる</h2>
-            <p>仕上がりイメージ、滞在時間、料金の追加条件をチャットで確認し、スタッフが来店前に把握できる状態にします。</p>
-          </div>
-          <div class="salon-hp-steps">
-            <div><span>1</span><strong>悩みを選ぶ</strong><p>髪質、肌質、希望スタイルを整理します。</p></div>
-            <div><span>2</span><strong>空き枠を確認</strong><p>候補日時を複数出して予約相談へ進みます。</p></div>
-            <div><span>3</span><strong>事前相談を送る</strong><p>当日の施術がスムーズになるよう共有します。</p></div>
+            <span class="section-label">Booking flow</span>
+            <h2>予約前の不安を、検索とチャットでつぶす</h2>
+            <ol class="number-list">
+              <li><strong>メニューを検索</strong><p>悩み、施術、エリア、日時から候補を絞ります。</p></li>
+              <li><strong>所要時間と料金を確認</strong><p>追加料金や相談が必要な条件を先に見せます。</p></li>
+              <li><strong>事前相談を送信</strong><p>仕上がりイメージや不安をスタッフへ共有します。</p></li>
+            </ol>
           </div>
         </section>
 
-        <section class="salon-hp-reserve" id="reserve">
+        <section class="salon-testimonials">
+          <div class="section-head-v4 center">
+            <span class="section-label">Reviews</span>
+            <h2>初回予約を後押しする声</h2>
+          </div>
+          <div class="testimonial-strip">
+            <article><span>5 rating</span><p>メニューごとの時間と相談内容がわかり、初めてでも予約しやすかったです。</p><strong>20代 / 会社員</strong></article>
+            <article><span>5 rating</span><p>事前に悩みを送れたので、当日のカウンセリングが短く済みました。</p><strong>30代 / 自営業</strong></article>
+            <article><span>5 rating</span><p>空き枠と担当者の得意分野が見えて、指名しやすい構成でした。</p><strong>40代 / 主婦</strong></article>
+          </div>
+        </section>
+
+        <section class="salon-reserve" id="reserve">
           <div>
-            <p class="section-label">Reserve</p>
-            <h2>予約前ヒアリングをフォームへ反映</h2>
-            <p>希望日時、悩み、メニュー候補をまとめて受け取り、スタッフが折り返ししやすい状態にします。</p>
+            <span class="section-label">Reserve</span>
+            <h2>予約相談フォーム</h2>
+            <p>希望日時とメニュー候補を受け取り、スタッフが折り返ししやすい形にまとめます。</p>
           </div>
           <form class="form-panel" data-demo-form>
-            <h3>予約相談フォーム</h3>
+            <h3>初回予約相談</h3>
             <div class="form-grid">
               <label class="field">お名前<input type="text" placeholder="山田 花子"></label>
-              <label class="field">希望日時<input type="text" placeholder="土曜午後、平日18時以降など"></label>
-              <label class="field">相談内容<textarea placeholder="初回で髪質改善を相談したい"></textarea></label>
+              <label class="field">希望メニュー<input type="text" placeholder="髪質改善、眉メイクなど"></label>
+              <label class="field">希望日時<textarea placeholder="土曜午後、平日18時以降など"></textarea></label>
               <button class="button primary" type="submit"><i data-lucide="send"></i> 予約相談を送信</button>
             </div>
           </form>

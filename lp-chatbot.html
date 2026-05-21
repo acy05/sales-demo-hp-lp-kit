@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>チャットボット導入LPデモ</title>
-    <meta name="description" content="問い合わせ対応を自動化するチャットボット導入LPデモ。">
+    <meta name="description" content="チャットボット導入の価値、デモ、機能、FAQ、診断フォームまでを持つLPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-chatbot layout-chatbot">
@@ -15,79 +15,117 @@
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
             <a href="#problem">課題</a>
-            <a href="#demo">デモ</a>
-            <a href="#contact">診断</a>
+            <a href="#platform">機能</a>
+            <a href="#faq">FAQ</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 診断</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v3 chatbot-lp-v3">
-        <section class="lp-hero chatbot-lp-hero">
-          <div>
-            <span class="kicker-line"><i data-lucide="messages-square"></i> Chatbot conversion LP</span>
-            <h1>問い合わせ対応を、売上につながる受付に変える</h1>
-            <p>同じ質問への返信、営業時間外の取りこぼし、フォーム未送信を減らし、相談内容を担当者が追える状態にします。</p>
+      <main class="page-v4 chatbot-ref-v4">
+        <section class="chatbot-hero">
+          <div class="chatbot-hero-copy">
+            <span class="kicker-line"><i data-lucide="messages-square"></i> AI support widget</span>
+            <h1>問い合わせを待たせず、商談につながる会話に変える</h1>
+            <p>Webチャット、FAQ、有人引き継ぎ、分析をまとめて導入。訪問者が離脱する前に答え、担当者には要約済みの会話だけを渡します。</p>
             <div class="hero-actions">
               <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
-              <a class="button secondary" href="#contact"><i data-lucide="file-check-2"></i> 無料診断へ</a>
+              <a class="button secondary" href="#platform"><i data-lucide="play-circle"></i> デモを見る</a>
             </div>
           </div>
-          <aside class="chatbot-lp-result">
-            <div><strong>18秒</strong><span>平均初回応答</span></div>
-            <div><strong>34%</strong><span>フォーム遷移</span></div>
-            <div><strong>有人</strong><span>高温度だけ通知</span></div>
-          </aside>
+          <div class="widget-builder" aria-label="チャットボット作成デモ">
+            <div class="builder-top"><span>Widget setup</span><strong>ready in 5 min</strong></div>
+            <label>サイトURL<input type="text" value="https://example.jp" aria-label="サイトURL"></label>
+            <button type="button">AIエージェントを生成</button>
+            <div class="builder-chat">
+              <p class="agent">料金と導入期間を教えてください。</p>
+              <p class="bot">目的を選ぶと、必要な設定と概算を案内できます。</p>
+            </div>
+          </div>
         </section>
 
-        <section class="chatbot-lp-problem" id="problem">
+        <section class="chatbot-proof">
+          <article><strong>95%</strong><span>一次回答の自動化</span></article>
+          <article><strong>1.2秒</strong><span>平均初回応答</span></article>
+          <article><strong>5分</strong><span>タグ設置の目安</span></article>
+          <article><strong>有人</strong><span>複雑な相談は引き継ぎ</span></article>
+        </section>
+
+        <section class="chatbot-problem" id="problem">
+          <div class="section-head-v4 center">
+            <span class="section-label">Why now</span>
+            <h2>手動対応が売上機会を削っている</h2>
+          </div>
+          <div class="problem-tiles">
+            <article><i data-lucide="moon"></i><h3>夜の問い合わせが消える</h3><p>返信待ちの間に比較先へ流れ、翌日の対応では熱量が落ちます。</p></article>
+            <article><i data-lucide="repeat"></i><h3>同じ質問に時間を使う</h3><p>料金、営業時間、対応範囲などの定型回答が担当者を圧迫します。</p></article>
+            <article><i data-lucide="inbox"></i><h3>会話が共有されない</h3><p>フォーム送信前の不安や質問が残らず、改善材料が見えません。</p></article>
+          </div>
+        </section>
+
+        <section class="chatbot-platform" id="platform">
           <div>
-            <p class="section-label">Problem</p>
-            <h2>返信が遅れるほど、問い合わせは消えていく</h2>
+            <span class="section-label">Platform</span>
+            <h2>チャット画面だけでなく、運用画面まで見せる</h2>
+            <p>LPでは訪問者側の会話と、担当者側のInbox・分析・学習データを同時に見せると導入後が想像しやすくなります。</p>
           </div>
-          <div class="lp-card-grid">
-            <article><h3>同じ質問に時間を取られる</h3><p>料金、営業時間、対応範囲などの定型対応が積み上がります。</p></article>
-            <article><h3>フォーム前に離脱する</h3><p>何を書けばいいかわからず、相談前にページを閉じられます。</p></article>
-            <article><h3>担当者への共有が薄い</h3><p>問い合わせの温度感や背景が残らず、返信品質がばらつきます。</p></article>
-          </div>
-        </section>
-
-        <section class="chatbot-lp-demo" id="demo">
-          <div class="chatbot-lp-demo-copy">
-            <p class="section-label">Product view</p>
-            <h2>見せ場は、訪問者チャットと担当者Inbox</h2>
-            <p>チャットウィジェットだけでなく、担当者が受け取る会話一覧と自動化フローまで見せることで、導入後の運用が伝わります。</p>
-          </div>
-          <div class="chatbot-lp-inbox">
+          <div class="support-console">
             <aside>
               <strong>Inbox</strong>
-              <div class="active">料金を知りたいです</div>
-              <div>予約受付の導入相談</div>
-              <div>営業時間の確認</div>
+              <button class="active" type="button">料金を知りたい</button>
+              <button type="button">予約受付を導入したい</button>
+              <button type="button">営業時間の確認</button>
             </aside>
-            <div class="chatbot-lp-thread">
-              <p class="visitor">導入費用を知りたいです。</p>
-              <p class="agent">月間問い合わせ数と用途によって変わります。目的を選んでください。</p>
-              <div><span>FAQ削減</span><span>予約受付</span><span>資料請求</span></div>
+            <div class="conversation-pane">
+              <p class="visitor">導入費用はどれくらいですか？</p>
+              <p class="bot">月間問い合わせ数と用途によって変わります。用途を選んでください。</p>
+              <div class="choice-grid"><button type="button">FAQ削減</button><button type="button">予約受付</button><button type="button">資料請求</button></div>
+            </div>
+            <div class="metrics-pane">
+              <span>Resolution</span><strong>72%</strong>
+              <span>Escalation</span><strong>18件</strong>
+              <span>Lead score</span><strong>High</strong>
             </div>
           </div>
         </section>
 
-        <section class="chatbot-lp-flow">
-          <div>
-            <p class="section-label">Flow</p>
-            <h2>導入は4ステップ</h2>
+        <section class="chatbot-features">
+          <div class="feature-tabs" aria-label="チャットボット機能">
+            <article><i data-lucide="database"></i><h3>学習データ</h3><p>Webサイト、PDF、FAQを読み込み、回答根拠を揃えます。</p></article>
+            <article><i data-lucide="route"></i><h3>有人ルール</h3><p>契約、個人情報、クレームは人へ渡す条件を設定します。</p></article>
+            <article><i data-lucide="bar-chart-3"></i><h3>会話分析</h3><p>よくある質問、離脱ポイント、フォーム遷移率を見ます。</p></article>
+            <article><i data-lucide="globe-2"></i><h3>多言語対応</h3><p>訪問者の言語に合わせて一次回答を切り替えます。</p></article>
           </div>
-          <ol>
-            <li><span>01</span><strong>質問を洗い出す</strong><p>よくある質問とフォーム前の不安を整理します。</p></li>
-            <li><span>02</span><strong>会話を作る</strong><p>回答、追加質問、有人引き継ぎを分けます。</p></li>
-            <li><span>03</span><strong>ページへ設置</strong><p>目的に合わせて入口とCTAを調整します。</p></li>
-            <li><span>04</span><strong>数字を見る</strong><p>質問数、遷移率、有人通知数を改善します。</p></li>
+        </section>
+
+        <section class="chatbot-setup">
+          <div class="section-head-v4">
+            <span class="section-label">Deploy</span>
+            <h2>導入ステップは短く見せる</h2>
+          </div>
+          <ol class="setup-steps">
+            <li><span>01</span><strong>URLを登録</strong><p>既存サイトとFAQを読み込みます。</p></li>
+            <li><span>02</span><strong>回答範囲を調整</strong><p>言ってよいこと、言わないこと、人へ渡す条件を決めます。</p></li>
+            <li><span>03</span><strong>タグを設置</strong><p>LPやHPにチャットウィジェットを追加します。</p></li>
+            <li><span>04</span><strong>数字を改善</strong><p>質問、解決率、リード数を見て会話を直します。</p></li>
           </ol>
         </section>
 
-        <section class="chatbot-lp-contact" id="contact">
+        <section class="chatbot-faq" id="faq">
           <div>
-            <p class="section-label">Free check</p>
+            <span class="section-label">FAQ</span>
+            <h2>導入前の不安に先回りする</h2>
+          </div>
+          <div class="faq-list">
+            <details open><summary>人の対応は残せますか？</summary><p>残せます。チャットは一次受付と整理に限定し、契約・最終判断・個別対応は担当者へ引き継ぎます。</p></details>
+            <details><summary>どのページに置くべきですか？</summary><p>料金、サービス詳細、予約、資料請求など、迷いが発生するページから設置します。</p></details>
+            <details><summary>何を学習させますか？</summary><p>既存HP、FAQ、サービス資料、料金表、対応できない条件を整理して登録します。</p></details>
+          </div>
+        </section>
+
+        <section class="chatbot-contact" id="contact">
+          <div>
+            <span class="section-label">Free check</span>
             <h2>導入できる問い合わせを無料診断</h2>
             <p>月間問い合わせ数、よくある質問、フォームの目的を入力すると、導入優先度を整理できます。</p>
           </div>

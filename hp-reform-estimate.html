@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>リフォーム会社HPデモ</title>
-    <meta name="description" content="地域リフォーム会社向けの見積もり相談チャット付きHPデモ。">
+    <meta name="description" content="概算見積、工事カテゴリ、施工前後、現地調査へつなげるリフォーム会社HPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-reform layout-reform">
@@ -14,73 +14,98 @@
           <a class="brand" href="./index.html"><span class="brand-mark">R</span><span>Ridge Reform Works</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
+            <a href="#calculator">概算</a>
             <a href="#works">施工事例</a>
-            <a href="#process">流れ</a>
             <a href="#estimate">見積相談</a>
           </nav>
         </div>
       </header>
 
-      <main class="page-v3 reform-hp-v3">
-        <section class="reform-hp-hero">
-          <div class="reform-hp-copy">
-            <span class="kicker-line"><i data-lucide="ruler"></i> Local renovation estimate</span>
-            <h1>住所入力と工事内容から、現地調査へ進めるリフォームHP</h1>
-            <p>施工事例で信頼を作りながら、工事箇所・築年数・緊急度を整理し、概算相談から現地調査へつなげます。</p>
+      <main class="page-v4 reform-ref-v4">
+        <section class="reform-estimate-hero" id="calculator">
+          <div class="reform-hero-copy">
+            <span class="kicker-line"><i data-lucide="calculator"></i> Renovation cost estimator</span>
+            <h1>工事内容を選ぶだけで、現地調査前の不安を減らす</h1>
+            <p>水回り、内装、外壁、屋根の概算幅を見せながら、写真・築年数・希望時期を集めて見積相談へつなげます。</p>
             <div class="hero-actions">
               <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 概算を相談</button>
-              <a class="button secondary" href="#works"><i data-lucide="images"></i> 施工事例を見る</a>
+              <a class="button secondary" href="#works"><i data-lucide="images"></i> 施工前後を見る</a>
             </div>
           </div>
-          <div class="reform-hp-estimator" aria-label="リフォーム見積もり入力">
-            <h2>かんたん概算</h2>
-            <div><i data-lucide="map-pin"></i><span>東京都杉並区</span></div>
-            <div><i data-lucide="bath"></i><span>浴室交換 / 築20年</span></div>
-            <strong>80万 - 140万円</strong>
-            <small>正式金額は現地調査後に提示</small>
+          <form class="estimate-widget" data-demo-form aria-label="リフォーム概算入力">
+            <h2>無料概算チェック</h2>
+            <label>郵便番号<input type="text" value="167-0051" aria-label="郵便番号"></label>
+            <label>工事箇所<select aria-label="工事箇所"><option>浴室交換</option><option>キッチン</option><option>外壁塗装</option></select></label>
+            <label>築年数<select aria-label="築年数"><option>築20年前後</option><option>築10年以内</option><option>築30年以上</option></select></label>
+            <button class="button primary" type="submit"><i data-lucide="calculator"></i> 概算を見る</button>
+            <div class="estimate-result"><span>参考幅</span><strong>80万 - 140万円</strong><small>正式金額は現地調査後に提示</small></div>
+          </form>
+        </section>
+
+        <section class="reform-cost-cards">
+          <article><i data-lucide="bath"></i><strong>浴室・洗面</strong><span>80万 - 180万円</span><p>配管、段差、断熱の確認が必要です。</p></article>
+          <article><i data-lucide="chef-hat"></i><strong>キッチン</strong><span>90万 - 220万円</span><p>サイズ、収納、換気、電気容量を見ます。</p></article>
+          <article><i data-lucide="paint-roller"></i><strong>内装</strong><span>20万 - 90万円</span><p>床、壁、建具、収納をまとめて調整します。</p></article>
+          <article><i data-lucide="warehouse"></i><strong>外壁・屋根</strong><span>70万 - 210万円</span><p>足場、劣化、補修範囲で大きく変わります。</p></article>
+        </section>
+
+        <section class="reform-feature-grid">
+          <div class="section-head-v4">
+            <span class="section-label">Plan tools</span>
+            <h2>見積前に必要な材料をそろえる</h2>
+            <p>概算だけを見せて終わらせず、比較に必要な情報を整理して担当者へ渡します。</p>
+          </div>
+          <div class="feature-masonry">
+            <article><i data-lucide="map-pin"></i><h3>地域単価</h3><p>エリアと職人手配の前提を見積相談に反映。</p></article>
+            <article><i data-lucide="clipboard-list"></i><h3>工事項目</h3><p>設備、撤去、内装、追加工事を分けて確認。</p></article>
+            <article><i data-lucide="file-text"></i><h3>PDF共有</h3><p>相談内容を家族や担当者へ共有しやすく整理。</p></article>
+            <article><i data-lucide="wallet"></i><h3>予算調整</h3><p>希望グレードと優先順位から削る場所を判断。</p></article>
           </div>
         </section>
 
-        <section class="reform-hp-services">
-          <article><i data-lucide="bath"></i><strong>水回り</strong><span>浴室・キッチン・洗面</span></article>
-          <article><i data-lucide="paint-roller"></i><strong>内装</strong><span>床・壁・収納</span></article>
-          <article><i data-lucide="warehouse"></i><strong>外壁・屋根</strong><span>塗装・補修・点検</span></article>
-        </section>
-
-        <section class="reform-hp-works" id="works">
+        <section class="reform-ba-section" id="works">
           <div>
-            <p class="section-label">Works</p>
-            <h2>施工前後を見せて、相談内容を具体化する</h2>
+            <span class="section-label">Before / After</span>
+            <h2>施工前後で、仕上がりと相談範囲を伝える</h2>
           </div>
-          <div class="reform-hp-work-grid">
-            <article style="--image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80')"><span>Before</span><strong>築20年の水回り</strong></article>
-            <article style="--image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"><span>After</span><strong>断熱と収納を改善</strong></article>
+          <div class="reform-ba-frame">
+            <div class="reform-before-photo">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" alt="リフォーム前の室内">
+              <span>Before</span>
+            </div>
+            <div class="reform-after-photo">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80" alt="リフォーム後の明るい室内">
+              <span>After</span>
+            </div>
+            <div class="reform-drag-line" aria-hidden="true"></div>
           </div>
         </section>
 
-        <section class="reform-hp-process" id="process">
-          <div>
-            <p class="section-label">Process</p>
-            <h2>概算だけで終わらせず、現地調査まで進める</h2>
+        <section class="reform-process">
+          <div class="section-head-v4 center">
+            <span class="section-label">How it works</span>
+            <h2>概算から現地調査までの流れ</h2>
           </div>
-          <ol>
-            <li><span>01</span><strong>写真・条件確認</strong><p>工事箇所、築年数、緊急度を整理。</p></li>
-            <li><span>02</span><strong>概算幅の案内</strong><p>工事種別ごとの目安と注意点を案内。</p></li>
-            <li><span>03</span><strong>現地調査予約</strong><p>訪問希望日と相談箇所を担当者へ共有。</p></li>
+          <ol class="process-ladder">
+            <li><span>01</span><strong>条件入力</strong><p>場所、築年数、工事箇所、写真の有無を確認。</p></li>
+            <li><span>02</span><strong>概算提示</strong><p>正式見積ではなく、検討に必要な幅を提示。</p></li>
+            <li><span>03</span><strong>写真・要望共有</strong><p>劣化、サイズ、希望グレードを整理。</p></li>
+            <li><span>04</span><strong>現地調査予約</strong><p>担当者が訪問前に見る資料として渡します。</p></li>
           </ol>
         </section>
 
-        <section class="reform-hp-request" id="estimate">
+        <section class="reform-quote-panel" id="estimate">
           <div>
-            <p class="section-label">Estimate</p>
+            <span class="section-label">Request</span>
             <h2>見積もり相談フォーム</h2>
-            <p>補助金や正式金額は担当者確認へ渡す前提で、一次相談だけを短く済ませます。</p>
+            <p>工事範囲が曖昧な段階でも、担当者が返答できる相談票に変換します。</p>
           </div>
           <form class="form-panel" data-demo-form>
+            <h3>現地調査の相談</h3>
             <div class="form-grid">
               <label class="field">お名前<input type="text" placeholder="山田 太郎"></label>
-              <label class="field">工事場所<input type="text" placeholder="キッチン、浴室、外壁など"></label>
-              <label class="field">相談内容<textarea placeholder="築20年の浴室交換を検討中"></textarea></label>
+              <label class="field">工事場所<input type="text" placeholder="浴室、キッチン、外壁など"></label>
+              <label class="field">相談内容<textarea placeholder="築20年の浴室交換を検討中。予算感を知りたい。"></textarea></label>
               <button class="button primary" type="submit"><i data-lucide="send"></i> 見積相談を送信</button>
             </div>
           </form>

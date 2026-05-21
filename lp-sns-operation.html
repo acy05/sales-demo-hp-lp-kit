@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SNS運用代行LPデモ</title>
-    <meta name="description" content="SNS運用の初回診断へ誘導するLPデモ。">
+    <meta name="description" content="投稿カレンダー、分析、制作、改善レポートまでを見せるSNS運用代行LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-sns layout-sns">
@@ -14,79 +14,129 @@
           <a class="brand" href="./index.html"><span class="brand-mark">N</span><span>Narrative SNS Lab</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#problem">課題</a>
-            <a href="#report">運用</a>
+            <a href="#calendar">カレンダー</a>
+            <a href="#analytics">分析</a>
             <a href="#contact">診断</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v3 sns-lp-v3">
-        <section class="lp-hero sns-lp-hero">
-          <div>
-            <span class="kicker-line"><i data-lucide="calendar-range"></i> Social operation LP</span>
-            <h1>投稿が止まるSNSを、売上導線に戻す</h1>
-            <p>投稿制作、予約投稿、数字確認、改善提案を週次で回し、アカウントを「なんとなく運用」から抜け出させます。</p>
+      <main class="page-v4 sns-ref-v4">
+        <section class="sns-hero">
+          <div class="sns-hero-copy">
+            <span class="kicker-line"><i data-lucide="calendar-days"></i> Social media operation</span>
+            <h1>投稿カレンダーと数字改善で、SNS運用を止めない</h1>
+            <p>企画、制作、予約投稿、分析、改善提案を1つの運用ボードで見せるLP。代行の中身を「見える化」して初回診断へつなげます。</p>
             <div class="hero-actions">
-              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断を試す</button>
-              <a class="button secondary" href="#contact"><i data-lucide="send"></i> 初回相談へ</a>
+              <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> アカウント診断</button>
+              <a class="button secondary" href="#calendar"><i data-lucide="calendar-range"></i> 運用画面を見る</a>
             </div>
           </div>
-          <div class="sns-lp-calendar-mini">
-            <div><span>Mon</span><strong>比較投稿</strong></div>
-            <div><span>Wed</span><strong>事例投稿</strong></div>
-            <div><span>Fri</span><strong>数字確認</strong></div>
+          <div class="social-preview" aria-label="SNS運用プレビュー">
+            <div class="phone-feed">
+              <span>@yourbrand</span>
+              <div class="feed-grid"><b></b><b></b><b></b><b></b><b></b><b></b></div>
+            </div>
+            <div class="campaign-card">
+              <strong>今週の投稿</strong>
+              <p>比較投稿、事例投稿、LP誘導、数字確認を予約済み。</p>
+              <em>保存率 +18%</em>
+            </div>
           </div>
         </section>
 
-        <section class="sns-lp-problem" id="problem">
+        <section class="sns-proof">
+          <span>Instagram</span>
+          <span>TikTok</span>
+          <span>X</span>
+          <span>YouTube Shorts</span>
+          <span>LINE導線</span>
+        </section>
+
+        <section class="sns-service-tabs">
+          <div class="section-head-v4 center">
+            <span class="section-label">Managed service</span>
+            <h2>代行範囲を、機能ではなく成果の順に見せる</h2>
+          </div>
+          <div class="service-tabs-grid">
+            <article><i data-lucide="lightbulb"></i><h3>企画</h3><p>商品、悩み、競合、導線から投稿テーマを設計します。</p></article>
+            <article><i data-lucide="image-plus"></i><h3>制作</h3><p>静止画、リール台本、投稿文、ハッシュタグを作成します。</p></article>
+            <article><i data-lucide="calendar-check"></i><h3>予約投稿</h3><p>週次カレンダーで投稿予定と承認状態を管理します。</p></article>
+            <article><i data-lucide="line-chart"></i><h3>改善</h3><p>保存、クリック、問い合わせを見て翌週の型に反映します。</p></article>
+          </div>
+        </section>
+
+        <section class="sns-calendar-section" id="calendar">
           <div>
-            <p class="section-label">Problem</p>
-            <h2>投稿数よりも、止まる原因を先に直す</h2>
+            <span class="section-label">Post calendar</span>
+            <h2>投稿予定を見せると、代行の安心感が出る</h2>
+            <p>曜日、投稿型、クリエイティブ、承認状態を1画面に置くことで、運用が止まらない理由を伝えます。</p>
           </div>
-          <div class="lp-card-grid">
-            <article><h3>何を投稿するか毎回迷う</h3><p>商品、悩み、導線が整理されず制作が止まります。</p></article>
-            <article><h3>数字を見ても次に進めない</h3><p>保存、クリック、問い合わせのどれを見るかが曖昧になります。</p></article>
-            <article><h3>売上導線が弱い</h3><p>プロフィール、固定投稿、LPへのつながりが切れています。</p></article>
+          <div class="calendar-board" aria-label="投稿カレンダー">
+            <header><strong>May campaign</strong><span>7 posts scheduled</span></header>
+            <div class="calendar-grid">
+              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+              <article>比較投稿<em>Draft</em></article><article></article><article>事例投稿<em>Ready</em></article><article>リール<em>Review</em></article><article>数字確認<em>Report</em></article><article>UGC<em>Ready</em></article><article></article>
+            </div>
           </div>
         </section>
 
-        <section class="sns-lp-report" id="report">
-          <div class="sns-lp-report-copy">
-            <p class="section-label">Operation board</p>
-            <h2>見せ場は、投稿カレンダーと数字レポート</h2>
-            <p>投稿予定と改善指標を同じ画面で見せることで、何を出し、何を見て改善するかが伝わります。</p>
-          </div>
-          <div class="sns-lp-dashboard">
-            <div class="sns-lp-week">
-              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
-              <article>比較投稿</article><article></article><article>事例投稿</article><article>LP誘導</article><article>数字確認</article>
-            </div>
+        <section class="sns-analytics" id="analytics">
+          <div class="analytics-dashboard" aria-label="SNS分析ダッシュボード">
             <aside>
-              <div><strong>+18%</strong><span>保存率</span></div>
-              <div><strong>+9%</strong><span>プロフィールクリック</span></div>
-              <div><strong>3件</strong><span>問い合わせ</span></div>
+              <strong>Audience</strong>
+              <div><span>18-24</span><b style="width:46%"></b></div>
+              <div><span>25-34</span><b style="width:72%"></b></div>
+              <div><span>35-44</span><b style="width:34%"></b></div>
             </aside>
+            <main>
+              <div class="metric-row">
+                <article><strong>25.4K</strong><span>Reach</span></article>
+                <article><strong>8.7%</strong><span>Save rate</span></article>
+                <article><strong>3件</strong><span>Lead</span></article>
+              </div>
+              <div class="chart-card"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </main>
+          </div>
+          <div>
+            <span class="section-label">Analytics</span>
+            <h2>レポートは、次の投稿を決めるために見せる</h2>
+            <p>フォロワー数だけでなく、保存、プロフィールクリック、LP遷移、問い合わせを並べて、改善提案まで出します。</p>
           </div>
         </section>
 
-        <section class="sns-lp-service">
+        <section class="sns-ai-caption">
           <div>
-            <p class="section-label">Service</p>
-            <h2>週次で止まらない運用にする</h2>
+            <span class="section-label">Content engine</span>
+            <h2>ネタ切れを防ぐ制作ボード</h2>
+            <p>投稿案、台本、画像指示、承認状態をまとめ、毎週同じ型で制作できる状態にします。</p>
           </div>
-          <ol>
-            <li><span>01</span><strong>投稿テーマ設計</strong><p>ターゲットと商品から投稿型を決めます。</p></li>
-            <li><span>02</span><strong>制作・予約投稿</strong><p>週単位で制作し、投稿予定を可視化します。</p></li>
-            <li><span>03</span><strong>数字確認</strong><p>保存、クリック、問い合わせを次の投稿へ反映します。</p></li>
+          <div class="caption-generator" aria-label="投稿制作ボード">
+            <label>投稿テーマ<input type="text" value="購入前によくある失敗" aria-label="投稿テーマ"></label>
+            <div class="tone-row"><button type="button">比較</button><button type="button">事例</button><button type="button">教育</button></div>
+            <p>「安さで選ぶ前に確認したい3つのポイント」から、保存されるチェックリスト投稿を作成。</p>
+          </div>
+        </section>
+
+        <section class="sns-process">
+          <div class="section-head-v4">
+            <span class="section-label">Weekly loop</span>
+            <h2>週次で止めない運用フロー</h2>
+          </div>
+          <ol class="setup-steps compact">
+            <li><span>01</span><strong>戦略確認</strong><p>売りたい商品とターゲットを確認。</p></li>
+            <li><span>02</span><strong>投稿制作</strong><p>週次カレンダーへ下書きを配置。</p></li>
+            <li><span>03</span><strong>投稿・返信</strong><p>反応が出た投稿から導線へ誘導。</p></li>
+            <li><span>04</span><strong>改善提案</strong><p>数字を見て次週の型を更新。</p></li>
           </ol>
         </section>
 
-        <section class="sns-lp-contact" id="contact">
+        <section class="sns-contact" id="contact">
           <div>
-            <p class="section-label">First diagnosis</p>
+            <span class="section-label">First diagnosis</span>
             <h2>今のアカウントの停止要因を診断</h2>
-            <p>投稿が続かない、売上につながらない、何を見ればいいかわからない状態を、初回相談で整理します。</p>
+            <p>投稿が続かない、売上につながらない、何を見ればいいかわからない状態を初回相談で整理します。</p>
           </div>
           <form class="form-panel" data-demo-form>
             <h3>SNS初回診断フォーム</h3>

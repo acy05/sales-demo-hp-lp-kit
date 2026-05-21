@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>採用強化LPデモ</title>
-    <meta name="description" content="応募前の不安をチャットで解消する採用LPデモ。">
+    <meta name="description" content="求人検索、職種カード、働き方、候補者導線を持つ採用強化LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-recruit layout-recruit">
@@ -14,78 +14,111 @@
           <a class="brand" href="./index.html"><span class="brand-mark">H</span><span>Harbor Careers</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#roles">募集職種</a>
+            <a href="#roles">求人</a>
             <a href="#culture">働き方</a>
-            <a href="#entry">応募</a>
+            <a href="#entry">面談</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v3 recruit-lp-v3">
-        <section class="lp-hero recruit-lp-hero">
-          <div>
-            <span class="kicker-line"><i data-lucide="search-check"></i> Candidate conversion LP</span>
-            <h1>応募前の不安を減らし、候補者の行動を後押しする</h1>
-            <p>職種、働き方、評価、選考前の疑問を先に見せ、応募前チャットとカジュアル面談へつなげます。</p>
-            <div class="hero-actions">
-              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前に質問する</button>
-              <a class="button secondary" href="#entry"><i data-lucide="file-user"></i> 面談へ進む</a>
+      <main class="page-v4 recruit-ref-v4">
+        <section class="job-search-hero">
+          <div class="job-hero-copy">
+            <span class="kicker-line"><i data-lucide="search-check"></i> Candidate search landing</span>
+            <h1>自分に合う職種を探して、応募前に不安を解消</h1>
+            <p>職種、勤務地、働き方で求人を探し、気になる条件はチャットで質問。いきなり応募ではなく、カジュアル面談へ自然に進めます。</p>
+          </div>
+          <form class="job-search-box" data-demo-form aria-label="求人検索">
+            <label><span>職種</span><input type="text" value="カスタマーサポート" aria-label="職種"></label>
+            <label><span>勤務地</span><input type="text" value="東京 / リモート" aria-label="勤務地"></label>
+            <label><span>条件</span><input type="text" value="未経験可" aria-label="条件"></label>
+            <button class="button primary" type="submit"><i data-lucide="search"></i> 求人を検索</button>
+          </form>
+        </section>
+
+        <section class="role-chips" aria-label="職種カテゴリ">
+          <a href="#roles">Customer Success</a>
+          <a href="#roles">Creative</a>
+          <a href="#roles">Operations</a>
+          <a href="#roles">Sales</a>
+          <a href="#roles">Part-time</a>
+        </section>
+
+        <section class="recruit-why">
+          <div class="section-head-v4 center">
+            <span class="section-label">Why Harbor</span>
+            <h2>求人票の前に、応募判断に必要な情報を出す</h2>
+          </div>
+          <div class="why-cards">
+            <article><i data-lucide="search"></i><h3>職種を探しやすい</h3><p>キーワード、勤務地、働き方から候補を絞れる検索UI。</p></article>
+            <article><i data-lucide="shield-check"></i><h3>応募前に確認できる</h3><p>未経験、リモート、評価、残業を先にチャットで質問。</p></article>
+            <article><i data-lucide="route"></i><h3>選考の流れが明確</h3><p>書類、面談、体験入社など、候補者が迷う点を整理。</p></article>
+          </div>
+        </section>
+
+        <section class="jobs-section" id="roles">
+          <div class="jobs-filter">
+            <strong>Filter</strong>
+            <label><input type="checkbox" checked> 未経験可</label>
+            <label><input type="checkbox" checked> リモートあり</label>
+            <label><input type="checkbox"> 週3から相談</label>
+            <label><input type="checkbox"> 副業OK</label>
+          </div>
+          <div class="job-list">
+            <div class="section-head-v4">
+              <span class="section-label">Open roles</span>
+              <h2>募集中の職種</h2>
             </div>
-          </div>
-          <div class="recruit-lp-photo-card">
-            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1100&q=80" alt="チームで働く様子">
-            <div><strong>未経験可</strong><span>週3リモート / 面談前質問OK</span></div>
-          </div>
-        </section>
-
-        <section class="recruit-lp-roles" id="roles">
-          <div>
-            <p class="section-label">Open roles</p>
-            <h2>求人検索UIは、募集職種の見せ場として使う</h2>
-          </div>
-          <div class="recruit-lp-job-board">
-            <aside>
-              <strong>Filter</strong>
-              <label><input type="checkbox" checked> 未経験可</label>
-              <label><input type="checkbox" checked> リモートあり</label>
-              <label><input type="checkbox"> 週3から相談</label>
-            </aside>
-            <div>
-              <article class="selected"><span>Customer Success</span><h3>カスタマーサポート</h3><p>未経験可 / 週3リモート / 顧客対応</p></article>
-              <article><span>Creative</span><h3>コンテンツ制作</h3><p>記事・SNS・採用広報 / ポートフォリオ歓迎</p></article>
-              <article><span>Operations</span><h3>事業推進アシスタント</h3><p>数字管理 / 日程調整 / 改善提案</p></article>
-            </div>
+            <article class="featured-job">
+              <div><span>Customer Success</span><h3>カスタマーサポート</h3><p>未経験可 / 週3リモート / 顧客対応 / 月給25万円から</p></div>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
+            <article>
+              <div><span>Creative</span><h3>コンテンツ制作</h3><p>記事・SNS・採用広報 / ポートフォリオ歓迎</p></div>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
+            <article>
+              <div><span>Operations</span><h3>事業推進アシスタント</h3><p>数字管理 / 日程調整 / 改善提案</p></div>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
           </div>
         </section>
 
-        <section class="recruit-lp-culture" id="culture">
+        <section class="culture-band" id="culture">
           <div>
-            <p class="section-label">Before entry</p>
-            <h2>応募前に知りたいことを先に出す</h2>
-            <p>採用LPでは、会社説明よりも「自分が応募してよいか」を判断できる材料が重要です。</p>
+            <span class="section-label">Culture</span>
+            <h2>入社後のリアルを先に見せる</h2>
+            <p>候補者は「応募していいか」を判断したい。ミッションより先に、最初の30日、評価される行動、働き方を具体化します。</p>
           </div>
-          <div class="lp-card-grid">
-            <article><h3>最初の30日</h3><p>覚える仕事とフォロー体制を具体的に示します。</p></article>
-            <article><h3>評価される行動</h3><p>何を見て評価するかを応募前に説明します。</p></article>
-            <article><h3>働き方</h3><p>出社頻度、時間、残業の考え方を明確にします。</p></article>
+          <div class="culture-photo">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="チームで働くメンバー">
           </div>
         </section>
 
-        <section class="recruit-lp-journey">
-          <div>
-            <p class="section-label">Candidate journey</p>
-            <h2>検索、質問、面談までを1ページで完結</h2>
+        <section class="candidate-support">
+          <article><span>01</span><h3>最初の30日</h3><p>研修、最初に任せる仕事、相談相手を提示します。</p></article>
+          <article><span>02</span><h3>評価される行動</h3><p>成果だけでなく、記録、改善、顧客対応の姿勢を説明します。</p></article>
+          <article><span>03</span><h3>働き方</h3><p>出社頻度、時間、残業、リモートの範囲を明確にします。</p></article>
+          <article><span>04</span><h3>選考準備</h3><p>面談前に見る資料と、よく聞かれる質問を共有します。</p></article>
+        </section>
+
+        <section class="candidate-journey">
+          <div class="section-head-v4">
+            <span class="section-label">Candidate journey</span>
+            <h2>検索から面談までを1ページで完結</h2>
           </div>
-          <ol>
-            <li><span>01</span><strong>職種を探す</strong><p>自分に合う職種と条件を確認します。</p></li>
-            <li><span>02</span><strong>応募前に質問する</strong><p>チャットで不明点を解消します。</p></li>
-            <li><span>03</span><strong>面談へ進む</strong><p>必要事項だけ送ってカジュアル面談へ。</p></li>
+          <ol class="journey-rail">
+            <li><strong>求人検索</strong><p>条件に合う職種を探す。</p></li>
+            <li><strong>応募前質問</strong><p>チャットで働き方や選考を確認。</p></li>
+            <li><strong>カジュアル面談</strong><p>最小項目で面談予約へ進む。</p></li>
+            <li><strong>正式応募</strong><p>納得してから応募書類を提出。</p></li>
           </ol>
         </section>
 
-        <section class="recruit-lp-entry" id="entry">
+        <section class="recruit-entry" id="entry">
           <div>
-            <p class="section-label">Casual entry</p>
+            <span class="section-label">Casual entry</span>
             <h2>応募の前に、不明点をなくす</h2>
             <p>職種、希望働き方、質問事項を受け取り、採用担当が返信しやすい形に整理します。</p>
           </div>
