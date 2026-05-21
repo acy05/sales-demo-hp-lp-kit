@@ -14,66 +14,61 @@
           <a class="brand" href="./index.html"><span class="brand-mark">N</span><span>Narrative SNS Lab</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#system">運用設計</a>
-            <a href="#loop">改善ループ</a>
+            <a href="#calendar">カレンダー</a>
+            <a href="#loop">改善</a>
             <a href="#contact">診断</a>
           </nav>
         </div>
       </header>
 
-      <main class="distinct-main">
-        <section class="sns-hero">
-          <div>
-            <span class="kicker-line"><i data-lucide="calendar-range"></i> Social planner system</span>
+      <main class="experience-main sns-studio">
+        <section class="sns-planner-app" id="calendar">
+          <div class="sns-studio-head">
+            <span class="kicker-line"><i data-lucide="calendar-range"></i> Social planner dashboard</span>
             <h1>投稿カレンダーと数字確認を見せるSNS運用LP</h1>
-            <p>Linktree Social PlannerやSocialDogを参考に、投稿代行の説明ではなく「何をいつ出し、何を見て改善するか」を見せる構成へ作り直しました。</p>
-            <div class="hero-actions">
-              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断を試す</button>
-              <a class="button secondary" href="#contact"><i data-lucide="send"></i> 初回相談へ</a>
-            </div>
+            <p>投稿予約ツールとSNS分析ダッシュボードの構成を参考に、投稿予定・制作状態・数字確認が同時に見える運用画面にしました。</p>
           </div>
-          <div class="sns-board" aria-label="SNS投稿管理ボード">
-            <div class="sns-board-week"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
-            <div class="sns-board-posts">
-              <div><strong>比較投稿</strong><span>下書き済み</span></div>
-              <div><strong>事例投稿</strong><span>予約投稿</span></div>
-              <div><strong>LP誘導</strong><span>数字確認</span></div>
-            </div>
-            <div class="sns-metrics">
-              <div><strong>保存 +18%</strong><span>投稿改善</span></div>
-              <div><strong>クリック +9%</strong><span>導線改善</span></div>
-              <div><strong>問い合わせ 3件</strong><span>CV確認</span></div>
-            </div>
-          </div>
-        </section>
 
-        <section class="sns-system" id="system">
-          <p class="section-label">Operation system</p>
-          <h2>制作、予約投稿、数字確認を一つの運用にする</h2>
-          <div class="sns-system-grid">
-            <article class="sns-card"><h3>投稿の型化</h3><p>悩み訴求、比較、事例、購入前チェックなど、商品ごとの投稿型を作ります。</p></article>
-            <article class="sns-card"><h3>導線の整備</h3><p>プロフィール、固定投稿、ストーリーズ、LPの流れを問い合わせ前提に整えます。</p></article>
-            <article class="sns-card"><h3>数字の確認</h3><p>保存、クリック、問い合わせなど、次の改善につながる数字だけを見ます。</p></article>
+          <div class="sns-calendar-layout">
+            <aside class="sns-channel-stack">
+              <h2>Channels</h2>
+              <button type="button" class="active"><i data-lucide="instagram"></i> Instagram</button>
+              <button type="button"><i data-lucide="twitter"></i> X</button>
+              <button type="button"><i data-lucide="music-2"></i> TikTok</button>
+              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断</button>
+            </aside>
+
+            <div class="sns-week-board">
+              <div class="sns-day"><span>Mon</span><article><strong>比較投稿</strong><small>下書き</small></article></div>
+              <div class="sns-day"><span>Tue</span><article><strong>事例投稿</strong><small>デザイン中</small></article></div>
+              <div class="sns-day"><span>Wed</span><article><strong>リール</strong><small>撮影メモ</small></article></div>
+              <div class="sns-day"><span>Thu</span><article><strong>LP誘導</strong><small>予約投稿</small></article></div>
+              <div class="sns-day"><span>Fri</span><article><strong>数字確認</strong><small>24h後</small></article></div>
+            </div>
+
+            <aside class="sns-kpi-panel">
+              <h2>Performance</h2>
+              <div><strong>+18%</strong><span>保存率</span></div>
+              <div><strong>+9%</strong><span>プロフィールクリック</span></div>
+              <div><strong>3件</strong><span>問い合わせ</span></div>
+            </aside>
           </div>
         </section>
 
-        <div class="sns-loop-shell">
-          <section class="sns-loop" id="loop">
-            <div>
-              <p class="section-label">Weekly loop</p>
-              <h2>週次で止まらないSNS運用に戻す</h2>
-              <p>投稿数を増やす前に、制作と確認の流れを固定します。止まる理由を診断してから支援内容を決めます。</p>
-            </div>
-            <ol>
-              <li>商品とターゲットから投稿テーマを決める</li>
-              <li>週1回、3本分の下書きを作る</li>
-              <li>公開後24時間の数字だけ確認する</li>
-              <li>数字から次週のテーマを決める</li>
-            </ol>
-          </section>
-        </div>
+        <section class="sns-production-lane" id="loop">
+          <div>
+            <p class="section-label">Production lane</p>
+            <h2>止まる原因を、制作ボードで見える化する</h2>
+          </div>
+          <div class="sns-lane">
+            <article><span>Idea</span><strong>購入前チェック</strong><p>悩みから投稿テーマを作成</p></article>
+            <article><span>Draft</span><strong>比較投稿</strong><p>本文とCTAを整理</p></article>
+            <article><span>Design</span><strong>7枚カルーセル</strong><p>保存される構成へ調整</p></article>
+            <article><span>Measure</span><strong>24時間後確認</strong><p>保存、クリック、相談数を記録</p></article>
+          </div>
+        </section>
 
-        <section class="sns-contact" id="contact">
+        <section class="sns-contact-desk" id="contact">
           <div>
             <p class="section-label">First diagnosis</p>
             <h2>今のアカウントの停止要因を診断</h2>
