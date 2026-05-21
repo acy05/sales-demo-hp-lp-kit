@@ -7,147 +7,87 @@
     <meta name="description" content="問い合わせ対応を自動化するチャットボット導入LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-chatbot">
+  <body class="theme-chatbot layout-chatbot">
     <div class="site-shell">
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href="./index.html"><span class="brand-mark">C</span><span>Chat Convert</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
           <nav class="navlinks" data-nav>
-            <a href="#problem">課題</a>
-            <a href="#steps">導入</a>
+            <a href="#flow">会話設計</a>
+            <a href="#usecases">用途</a>
             <a href="#contact">診断</a>
           </nav>
         </div>
       </header>
 
-      <main>
-        <section class="hero lp">
+      <main class="distinct-main">
+        <section class="chatbot-hero">
           <div>
-            <span class="eyebrow"><i data-lucide="message-square-text"></i> Landing page demo</span>
-            <h1>問い合わせ対応を、売上につながる受付に変える</h1>
-            <p>よくある質問、資料請求、予約前ヒアリングを自動化。小さく導入して、会話ログを見ながら改善できるチャットボット導入LPです。</p>
+            <span class="kicker-line"><i data-lucide="messages-square"></i> Live chat product demo</span>
+            <h1>訪問者チャットと担当者Inboxを同時に見せる導入LP</h1>
+            <p>TidioやAsk-AI系の構成を参考に、ウィジェットだけでなく担当者が受け取る会話整理まで見せるLPへ作り直しました。</p>
             <div class="hero-actions">
               <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
               <a class="button secondary" href="#contact"><i data-lucide="file-check-2"></i> 無料診断へ</a>
             </div>
           </div>
-          <div class="hero-media">
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="チャットボット導入を検討するチーム">
-            <div class="floating-note">
-              <strong>取りこぼしを減らすLP導線</strong>
-              <span>訪問者の質問に即答し、温度感の高い相談をフォームへ誘導します。</span>
+          <div class="chatbot-stage" aria-label="チャットボット導入画面">
+            <div class="chatbot-agent">
+              <span>Agent inbox</span>
+              <h3>新規相談 12件</h3>
+              <p>平均初回返信 18秒</p>
+              <p>有人引き継ぎ 3件</p>
+            </div>
+            <div class="chatbot-widget">
+              <div class="chat-bubble">料金を知りたいです</div>
+              <div class="chat-bubble reply">導入目的を選んでください</div>
+              <div class="visitor-chat"><div><span>FAQ削減</span><span>予約受付</span><span>採用</span></div></div>
             </div>
           </div>
         </section>
 
-        <section class="reference-panel chatbot-panel" aria-label="チャットボット導入LPの構成">
-          <div class="reference-panel-inner">
-            <div class="reference-copy">
-              <span class="eyebrow"><i data-lucide="messages-square"></i> Conversation product</span>
-              <h2>訪問者側と担当者側の両方を見せる</h2>
-              <p>チャットボットLPは、右下ウィジェットだけでなく、担当者が受け取る会話整理まで見せると導入後の運用が伝わります。</p>
-            </div>
-            <div class="mock-dashboard chat-product" aria-label="チャットボット導入画面サンプル">
-              <div class="agent-inbox">
-                <span>Agent inbox</span>
-                <strong>新規相談 12件</strong>
-                <em>平均初回返信 18秒</em>
-              </div>
-              <div class="visitor-chat">
-                <p>料金を知りたいです</p>
-                <p>導入目的を選んでください</p>
-                <div><span>FAQ削減</span><span>予約受付</span><span>採用</span></div>
-              </div>
-            </div>
+        <section class="chatbot-flow" id="flow">
+          <p class="section-label">Conversation flow</p>
+          <h2>質問からフォーム送信までを会話で分岐</h2>
+          <div class="chatbot-flow-grid">
+            <div><h3>01 入口</h3><p>ページごとに質問例を変えて、迷った訪問者を拾います。</p></div>
+            <div><h3>02 回答</h3><p>FAQ、料金、納期、対応範囲を即時に案内します。</p></div>
+            <div><h3>03 整理</h3><p>予算、時期、目的を聞いて相談の温度感を分けます。</p></div>
+            <div><h3>04 送信</h3><p>担当者が返信しやすいフォームへつなげます。</p></div>
           </div>
         </section>
 
-        <section class="section alt" id="problem">
-          <div class="section-inner">
-            <div class="section-head">
-              <div>
-                <span class="eyebrow"><i data-lucide="target"></i> Problem</span>
-                <h2>チャット導入の価値が伝わる3つの課題</h2>
-              </div>
-              <p>営業では、機能説明よりも「今どの損失を減らすか」を見せる方が伝わります。</p>
-            </div>
-            <div class="grid-3">
-              <article class="feature-card">
-                <i data-lucide="moon"></i>
-                <h3>営業時間外の離脱</h3>
-                <p>夜間や休日の質問を受け止め、翌営業日の対応漏れを減らします。</p>
-              </article>
-              <article class="feature-card">
-                <i data-lucide="repeat-2"></i>
-                <h3>同じ質問の反復</h3>
-                <p>料金、納期、対応範囲などの定型質問へ即答し、人の時間を守ります。</p>
-              </article>
-              <article class="feature-card">
-                <i data-lucide="filter"></i>
-                <h3>温度感の見極め不足</h3>
-                <p>導入時期、予算、課題を聞いて、優先度の高い相談を見つけます。</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="steps">
-          <div class="section-inner">
-            <div class="section-head">
-              <div>
-                <span class="eyebrow"><i data-lucide="list-checks"></i> Steps</span>
-                <h2>導入は、既存情報の整理から始める</h2>
-              </div>
-              <p>営業資料やFAQがあれば、最初のチャットシナリオは短期間で形にできます。</p>
-            </div>
-            <div class="grid-3">
-              <article class="step-card">
-                <i data-lucide="file-search"></i>
-                <h3>1. FAQ抽出</h3>
-                <p>よくある質問、営業資料、価格表から回答候補をまとめます。</p>
-              </article>
-              <article class="step-card">
-                <i data-lucide="message-circle-code"></i>
-                <h3>2. シナリオ実装</h3>
-                <p>質問、分岐、フォーム誘導をHPやLPの目的に合わせて実装します。</p>
-              </article>
-              <article class="step-card">
-                <i data-lucide="chart-no-axes-combined"></i>
-                <h3>3. 会話改善</h3>
-                <p>実際の質問を見て回答を追加し、問い合わせの質を高めます。</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="band">
-          <div class="band-inner">
+        <div class="chatbot-usecases-shell">
+          <section class="chatbot-usecases" id="usecases">
             <div>
-              <h2>まずは1ページ、1目的で導入</h2>
-              <p>資料請求、予約、採用、問い合わせ削減など、成果が見える導線から始めます。</p>
+              <p class="section-label">Use cases</p>
+              <h2>導入先ごとに会話パターンを変える</h2>
+              <p>チャットボットは一律のFAQではなく、予約、採用、資料請求など目的ごとに会話設計を変えます。</p>
             </div>
-            <button class="button secondary" type="button" data-open-chat><i data-lucide="sparkles"></i> 診断を開始</button>
-          </div>
-        </section>
+            <div class="chatbot-usecase-grid">
+              <article class="chatbot-card"><h3>店舗予約</h3><p>希望日時とメニューを聞き、スタッフ確認へつなげます。</p></article>
+              <article class="chatbot-card"><h3>BtoB資料請求</h3><p>業種、課題、導入時期を聞いて商談化します。</p></article>
+              <article class="chatbot-card"><h3>採用応募</h3><p>職種、働き方、選考前の不安を受け止めます。</p></article>
+            </div>
+          </section>
+        </div>
 
-        <section class="section alt" id="contact">
-          <div class="section-inner grid-2">
-            <div>
-              <span class="eyebrow"><i data-lucide="clipboard-check"></i> Free check</span>
-              <h2>導入できる問い合わせを無料診断</h2>
-              <p>月間問い合わせ数、よくある質問、フォームの目的を入力すると、導入優先度を整理できます。</p>
-            </div>
-            <form class="form-panel" data-demo-form>
-              <h3>無料診断フォーム</h3>
-              <div class="form-grid">
-                <label class="field">会社名<input type="text" placeholder="株式会社サンプル"></label>
-                <label class="field">月間問い合わせ数<input type="text" placeholder="例: 30件"></label>
-                <label class="field">困っていること<textarea placeholder="同じ質問が多く、返信が遅れがち"></textarea></label>
-                <button class="button primary" type="submit"><i data-lucide="send"></i> 診断を依頼</button>
-              </div>
-            </form>
+        <section class="chatbot-contact" id="contact">
+          <div>
+            <p class="section-label">Free check</p>
+            <h2>導入できる問い合わせを無料診断</h2>
+            <p>月間問い合わせ数、よくある質問、フォームの目的を入力すると、導入優先度を整理できます。</p>
           </div>
+          <form class="form-panel" data-demo-form>
+            <h3>無料診断フォーム</h3>
+            <div class="form-grid">
+              <label class="field">会社名<input type="text" placeholder="株式会社サンプル"></label>
+              <label class="field">月間問い合わせ数<input type="text" placeholder="例: 30件"></label>
+              <label class="field">困っていること<textarea placeholder="同じ質問が多く、返信が遅れがち"></textarea></label>
+              <button class="button primary" type="submit"><i data-lucide="send"></i> 診断を依頼</button>
+            </div>
+          </form>
         </section>
       </main>
 
