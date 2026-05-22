@@ -89,19 +89,29 @@
         </section>
 
         <section class="lw-salon-reserve" id="reserve">
-          <div>
-            <span class="section-label">Reserve</span>
-            <h2>最後は予約票ではなく、選択状態を見せる</h2>
-            <p>メニュー、担当、空き枠が選ばれている状態を見せ、あとはチャットで不安だけ解消します。</p>
-          </div>
-          <div class="lw-booking-ticket">
-            <header><span>Selected</span><strong>似合わせカット相談</strong></header>
-            <dl>
-              <div><dt>日時</dt><dd>今日 18:30</dd></div>
-              <div><dt>所要時間</dt><dd>90分</dd></div>
-              <div><dt>事前確認</dt><dd>髪質・普段のセット時間</dd></div>
-            </dl>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 予約前に相談する</button>
+          <div class="lw-reserve-board">
+            <div class="lw-reserve-heading">
+              <span class="section-label">Reserve</span>
+              <h2>メニューを選んだあと、空き枠まで一気に見せる</h2>
+              <p>予約アプリの確認画面のように、担当・日時・事前確認を同じ面で整理します。</p>
+            </div>
+            <div class="lw-time-strip">
+              <button type="button">今日 18:30</button>
+              <button type="button">明日 11:00</button>
+              <button type="button">土曜 15:00</button>
+              <button type="button">日曜 10:30</button>
+            </div>
+            <div class="lw-reserve-details">
+              <article>
+                <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=900&q=80" alt="美容サロンで髪を整えるスタイリスト">
+                <div><span>Menu</span><strong>似合わせカット相談</strong><p>髪質、普段のセット時間、希望イメージを事前に確認。</p></div>
+              </article>
+              <aside>
+                <strong>予約前チェック</strong>
+                <p>90分 / 事前相談あり / 担当指名なし</p>
+                <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 予約前に相談する</button>
+              </aside>
+            </div>
           </div>
         </section>
       </main>
