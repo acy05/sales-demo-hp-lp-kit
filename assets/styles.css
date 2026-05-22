@@ -2360,7 +2360,7 @@ textarea {
   }
 }
 
-/* MCP title-specific rebuild: each demo uses a different product layout. */
+/* Title-specific rebuild: each demo uses a different product layout. */
 .layout-ai,
 .layout-salon,
 .layout-reform,
@@ -3846,7 +3846,7 @@ textarea {
   }
 }
 
-/* V3: LP/HP-appropriate layouts with LazyWeb-inspired modules as page sections. */
+/* V3: LP/HP-appropriate layouts with distinct product modules as page sections. */
 .page-v3 {
   width: 100%;
   background: #f7fbfc;
@@ -4949,6 +4949,11 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+}
+
+.ai-product-header > div {
+  display: grid;
+  gap: 3px;
 }
 
 .ai-product-header span,
