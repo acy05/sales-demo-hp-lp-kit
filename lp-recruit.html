@@ -36,12 +36,12 @@
         </section>
 
         <section class="lw-job-search">
-          <form class="lw-search-panel" data-demo-form aria-label="求人検索">
+          <div class="lw-search-panel" aria-label="求人検索">
             <label><span>職種</span><input type="text" value="カスタマーサポート" aria-label="職種"></label>
             <label><span>勤務地</span><input type="text" value="東京 / リモート" aria-label="勤務地"></label>
             <label><span>条件</span><input type="text" value="未経験可" aria-label="条件"></label>
-            <button class="button primary" type="submit"><i data-lucide="search"></i> 求人を検索</button>
-          </form>
+            <button class="button primary" type="button"><i data-lucide="search"></i> 求人を検索</button>
+          </div>
         </section>
 
         <section class="lw-recruit-culture" id="culture">
@@ -77,18 +77,17 @@
         <section class="lw-recruit-entry" id="entry">
           <div>
             <span class="section-label">Casual entry</span>
-            <h2>応募の前に、不明点をなくす</h2>
-            <p>職種、希望働き方、質問事項を受け取り、採用担当が返信しやすい形に整理します。</p>
+            <h2>応募前の不安は、選考フローで先にほどく</h2>
+            <p>最後を入力欄にせず、候補者が次に何をすればいいかを見せます。</p>
           </div>
-          <form class="form-panel" data-demo-form>
-            <h3>カジュアル面談フォーム</h3>
-            <div class="form-grid">
-              <label class="field">お名前<input type="text" placeholder="山田 太郎"></label>
-              <label class="field">興味のある職種<input type="text" placeholder="カスタマーサポート"></label>
-              <label class="field">質問・相談<textarea placeholder="未経験でも応募できるか知りたい"></textarea></label>
-              <button class="button primary" type="submit"><i data-lucide="send"></i> 面談を申し込む</button>
-            </div>
-          </form>
+          <div class="lw-selection-rail">
+            <ol>
+              <li><span>01</span><strong>求人を選ぶ</strong><p>条件が近い職種を保存</p></li>
+              <li><span>02</span><strong>質問する</strong><p>未経験、働き方、評価を確認</p></li>
+              <li><span>03</span><strong>面談へ進む</strong><p>応募前に30分だけ話す</p></li>
+            </ol>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問を開く</button>
+          </div>
         </section>
       </main>
 

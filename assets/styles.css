@@ -7449,10 +7449,200 @@ textarea {
   text-transform: uppercase;
 }
 
+.lw-action-card,
+.lw-booking-ticket,
+.lw-site-check,
+.lw-setup-card,
+.lw-diagnosis-board,
+.lw-selection-rail {
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.lw-action-card header,
+.lw-booking-ticket header,
+.lw-site-check header,
+.lw-setup-card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: start;
+}
+
+.lw-action-card header span,
+.lw-booking-ticket header span,
+.lw-site-check header span,
+.lw-setup-card header span {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.lw-action-list {
+  display: grid;
+  gap: 12px;
+}
+
+.lw-action-list article {
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent) 5%, white);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+}
+
+.lw-action-list svg {
+  color: var(--accent);
+}
+
+.lw-action-list span,
+.lw-booking-ticket dd,
+.lw-site-check p,
+.lw-selection-rail p {
+  color: var(--muted);
+}
+
+.lw-booking-ticket {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8f5 100%);
+}
+
+.lw-booking-ticket dl {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.lw-booking-ticket dl div {
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+}
+
+.lw-booking-ticket dt {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.lw-site-check {
+  background: #12291b;
+  color: #fff;
+}
+
+.lw-site-check header span,
+.lw-site-check p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.lw-site-check ol,
+.lw-selection-rail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.lw-site-check li {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 10px;
+}
+
+.lw-site-check li span,
+.lw-selection-rail li span {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.lw-site-check .button.primary {
+  background: #fff;
+  color: #142719;
+  box-shadow: none;
+}
+
+.lw-setup-card label {
+  border: 1px solid var(--soft-line);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.lw-diagnosis-board {
+  grid-template-columns: repeat(3, 1fr);
+  background: #2a1726;
+  color: #fff;
+}
+
+.lw-diagnosis-board article {
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.lw-diagnosis-board span {
+  color: #ff9ab0;
+  font-weight: 900;
+}
+
+.lw-diagnosis-board p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.lw-diagnosis-board .button {
+  grid-column: 1 / -1;
+}
+
+.lw-selection-rail {
+  background: linear-gradient(135deg, #ffffff 0%, #f6fbfd 100%);
+}
+
+.lw-selection-rail li {
+  position: relative;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 16px 16px 16px 18px;
+  display: grid;
+  gap: 6px;
+}
+
 @media (max-width: 640px) {
   .page-v6 .lw-search-panel,
   .page-v6 .lw-slot-photo,
   .page-v6 .form-panel {
     box-shadow: 0 12px 28px rgba(18, 44, 54, 0.1);
+  }
+
+  .lw-action-card header,
+  .lw-booking-ticket header,
+  .lw-site-check header,
+  .lw-setup-card header,
+  .lw-booking-ticket dl div,
+  .lw-diagnosis-board {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .lw-site-check li {
+    grid-template-columns: 1fr;
   }
 }

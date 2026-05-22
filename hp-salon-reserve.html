@@ -28,12 +28,12 @@
             <h1>メニュー、場所、空き時間から美容サロンを選ぶ</h1>
             <p>最初の画面で「何を・どこで・いつ」を決められる予約HPにします。</p>
           </div>
-          <form class="lw-search-panel" data-demo-form aria-label="サロン予約検索">
+          <div class="lw-search-panel" aria-label="サロン予約検索">
             <label><span>メニュー</span><input type="text" value="髪質改善・眉カット" aria-label="メニュー"></label>
             <label><span>エリア</span><input type="text" value="表参道" aria-label="エリア"></label>
             <label><span>日時</span><input type="text" value="今日 18:00以降" aria-label="日時"></label>
-            <button class="button primary" type="submit"><i data-lucide="search"></i> 空き枠を探す</button>
-          </form>
+            <button class="button primary" type="button"><i data-lucide="search"></i> 空き枠を探す</button>
+          </div>
         </section>
 
         <section class="lw-salon-categories" id="categories">
@@ -91,18 +91,18 @@
         <section class="lw-salon-reserve" id="reserve">
           <div>
             <span class="section-label">Reserve</span>
-            <h2>初回予約相談</h2>
-            <p>希望日時とメニュー候補を受け取り、スタッフが折り返ししやすい形にまとめます。</p>
+            <h2>最後は予約票ではなく、選択状態を見せる</h2>
+            <p>メニュー、担当、空き枠が選ばれている状態を見せ、あとはチャットで不安だけ解消します。</p>
           </div>
-          <form class="form-panel" data-demo-form>
-            <h3>予約相談フォーム</h3>
-            <div class="form-grid">
-              <label class="field">お名前<input type="text" placeholder="山田 花子"></label>
-              <label class="field">希望メニュー<input type="text" placeholder="髪質改善、眉メイクなど"></label>
-              <label class="field">希望日時<textarea placeholder="土曜午後、平日18時以降など"></textarea></label>
-              <button class="button primary" type="submit"><i data-lucide="send"></i> 予約相談を送信</button>
-            </div>
-          </form>
+          <div class="lw-booking-ticket">
+            <header><span>Selected</span><strong>似合わせカット相談</strong></header>
+            <dl>
+              <div><dt>日時</dt><dd>今日 18:30</dd></div>
+              <div><dt>所要時間</dt><dd>90分</dd></div>
+              <div><dt>事前確認</dt><dd>髪質・普段のセット時間</dd></div>
+            </dl>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 予約前に相談する</button>
+          </div>
         </section>
       </main>
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>チャットボット導入LPデモ</title>
-    <meta name="description" content="チャットボット導入の価値、デモ、機能、FAQ、診断フォームまでを持つLPデモ。">
+    <meta name="description" content="チャットボット導入の価値、デモ、機能、FAQ、設置前チェックまでを持つLPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body class="theme-chatbot layout-chatbot">
@@ -89,18 +89,16 @@
         <section class="lw-chat-contact" id="contact">
           <div>
             <span class="section-label">Free check</span>
-            <h2>導入できる問い合わせを無料診断</h2>
-            <p>月間問い合わせ数、よくある質問、フォームの目的を入力すると、導入優先度を整理できます。</p>
+            <h2>導入可否は、設置前チェックで見せる</h2>
+            <p>問い合わせ数を書かせるのではなく、設置に必要な素材がそろっているかを確認します。</p>
           </div>
-          <form class="form-panel" data-demo-form>
-            <h3>無料診断フォーム</h3>
-            <div class="form-grid">
-              <label class="field">会社名<input type="text" placeholder="株式会社サンプル"></label>
-              <label class="field">月間問い合わせ数<input type="text" placeholder="例: 30件"></label>
-              <label class="field">困っていること<textarea placeholder="同じ質問が多く、返信が遅れがち"></textarea></label>
-              <button class="button primary" type="submit"><i data-lucide="send"></i> 診断を依頼</button>
-            </div>
-          </form>
+          <div class="lw-setup-card">
+            <header><strong>Widget readiness</strong><span>3 checks</span></header>
+            <label><input type="checkbox" checked> よくある質問が10件以上ある</label>
+            <label><input type="checkbox" checked> 料金・対応範囲ページがある</label>
+            <label><input type="checkbox"> 有人引き継ぎ条件を決めていない</label>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を開く</button>
+          </div>
         </section>
       </main>
 

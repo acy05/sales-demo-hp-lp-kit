@@ -26,14 +26,14 @@
           <div class="lw-hero-copy">
             <span class="lw-kicker"><i data-lucide="calculator"></i> Renovation estimate</span>
             <h1>住所と工事箇所から、見積前の不安を小さくする</h1>
-            <p>住所入力、概算比較、仕上がり確認、相談フォームを1ページで完結します。</p>
+            <p>住所入力、概算比較、仕上がり確認、相談導線を1ページで完結します。</p>
           </div>
-          <form class="lw-estimate-search" data-demo-form aria-label="リフォーム概算入力">
+          <div class="lw-estimate-search" aria-label="リフォーム概算入力">
             <label><span>住所または郵便番号</span><input type="text" value="杉並区 167-0051" aria-label="住所または郵便番号"></label>
             <label><span>工事箇所</span><select aria-label="工事箇所"><option>浴室交換</option><option>キッチン</option><option>外壁塗装</option></select></label>
-            <button class="button primary" type="submit"><i data-lucide="calculator"></i> 概算を見る</button>
+            <button class="button primary" type="button"><i data-lucide="calculator"></i> 概算を見る</button>
             <div><small>目安幅</small><strong>80万 - 140万円</strong><span>現地調査後に正式提示</span></div>
-          </form>
+          </div>
         </section>
 
         <section class="lw-quote-compare">
@@ -69,18 +69,18 @@
         <section class="lw-reform-request" id="estimate">
           <div>
             <span class="section-label">Request</span>
-            <h2>現地調査の相談</h2>
-            <p>工事範囲が曖昧な段階でも、担当者が返答できる相談票に変換します。</p>
+            <h2>現地調査前に、確認する材料をそろえる</h2>
+            <p>入力欄で終わらせず、写真・希望時期・予算幅の確認カードとして着地させます。</p>
           </div>
-          <form class="form-panel" data-demo-form>
-            <h3>見積もり相談フォーム</h3>
-            <div class="form-grid">
-              <label class="field">お名前<input type="text" placeholder="山田 太郎"></label>
-              <label class="field">工事場所<input type="text" placeholder="浴室、キッチン、外壁など"></label>
-              <label class="field">相談内容<textarea placeholder="築20年の浴室交換を検討中。予算感を知りたい。"></textarea></label>
-              <button class="button primary" type="submit"><i data-lucide="send"></i> 見積相談を送信</button>
-            </div>
-          </form>
+          <div class="lw-site-check">
+            <header><strong>現地調査前チェック</strong><span>3点だけ先に整理</span></header>
+            <ol>
+              <li><span>01</span><strong>写真</strong><p>正面、配管まわり、劣化箇所</p></li>
+              <li><span>02</span><strong>希望時期</strong><p>急ぎ、3か月以内、未定</p></li>
+              <li><span>03</span><strong>予算幅</strong><p>80万、140万、上限相談</p></li>
+            </ol>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 概算をチャットで確認</button>
+          </div>
         </section>
       </main>
 
