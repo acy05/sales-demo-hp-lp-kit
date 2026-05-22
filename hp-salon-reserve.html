@@ -21,86 +21,81 @@
         </div>
       </header>
 
-      <main class="page-v4 salon-ref-v4">
-        <section class="salon-search-hero">
-          <div class="salon-hero-copy">
-            <span class="kicker-line"><i data-lucide="sparkles"></i> Book local self-care services</span>
-            <h1>今日行ける美容メニューを探して、そのまま予約相談</h1>
-            <p>施術内容、場所、日時を先に選べる予約検索型のHP。メニュー選びから初回相談までを短くつなぎます。</p>
+      <main class="page-v6 lw-salon">
+        <section class="lw-salon-hero">
+          <div class="lw-hero-copy">
+            <span class="lw-kicker"><i data-lucide="sparkles"></i> Beauty booking marketplace</span>
+            <h1>メニュー、場所、空き時間から美容サロンを選ぶ</h1>
+            <p>最初の画面で「何を・どこで・いつ」を決められる予約HPにします。</p>
           </div>
-          <form class="salon-search-box" data-demo-form aria-label="サロン予約検索">
+          <form class="lw-search-panel" data-demo-form aria-label="サロン予約検索">
             <label><span>メニュー</span><input type="text" value="髪質改善・眉カット" aria-label="メニュー"></label>
             <label><span>エリア</span><input type="text" value="表参道" aria-label="エリア"></label>
-            <label><span>日時</span><input type="text" value="今週末" aria-label="日時"></label>
+            <label><span>日時</span><input type="text" value="今日 18:00以降" aria-label="日時"></label>
             <button class="button primary" type="submit"><i data-lucide="search"></i> 空き枠を探す</button>
           </form>
         </section>
 
-        <section class="salon-categories" id="categories">
-          <div class="section-head-v4 center">
-            <span class="section-label">Browse by category</span>
-            <h2>やりたい施術から探せる</h2>
+        <section class="lw-salon-categories" id="categories">
+          <a href="#services"><i data-lucide="scissors"></i><span>Hair</span></a>
+          <a href="#services"><i data-lucide="sparkles"></i><span>Nail</span></a>
+          <a href="#services"><i data-lucide="eye"></i><span>Brows</span></a>
+          <a href="#services"><i data-lucide="flower-2"></i><span>Spa</span></a>
+          <a href="#services"><i data-lucide="palette"></i><span>Makeup</span></a>
+        </section>
+
+        <section class="lw-salon-listings" id="services">
+          <div class="lw-section-row">
+            <div>
+              <span class="section-label">Recommended</span>
+              <h2>近くで予約しやすいメニュー</h2>
+            </div>
+            <a href="#reserve">予約相談へ</a>
           </div>
-          <div class="category-wheel">
-            <a href="#services"><i data-lucide="scissors"></i><strong>Hair</strong><span>カット・髪質改善</span></a>
-            <a href="#services"><i data-lucide="sparkles"></i><strong>Nail</strong><span>ケア・ジェル</span></a>
-            <a href="#services"><i data-lucide="eye"></i><strong>Brows</strong><span>眉・まつ毛</span></a>
-            <a href="#services"><i data-lucide="flower-2"></i><strong>Spa</strong><span>ヘッドスパ</span></a>
-            <a href="#services"><i data-lucide="palette"></i><strong>Makeup</strong><span>メイク相談</span></a>
+          <div class="lw-salon-cards">
+            <article>
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="ヘアサロンで施術を受ける女性">
+              <div><span>★ 4.9 / 表参道</span><h3>似合わせカット相談</h3><p>90分・初回カウンセリング込み</p></div>
+              <button class="button secondary" type="button" data-open-chat>相談する</button>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="ネイルデザインの手元">
+              <div><span>★ 4.8 / 恵比寿</span><h3>ナチュラルネイル</h3><p>75分・ケア込み</p></div>
+              <button class="button secondary" type="button" data-open-chat>相談する</button>
+            </article>
+            <article>
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="メイク用品と美容スペース">
+              <div><span>★ 4.7 / 渋谷</span><h3>眉メイクデザイン</h3><p>45分・印象相談</p></div>
+              <button class="button secondary" type="button" data-open-chat>相談する</button>
+            </article>
           </div>
         </section>
 
-        <section class="salon-featured" id="services">
-          <div class="section-head-v4">
-            <span class="section-label">Featured services</span>
-            <h2>初回で選ばれやすいメニュー</h2>
-            <p>価格、所要時間、相談ボタンだけを見せ、予約前の迷いを減らします。</p>
+        <section class="lw-salon-slots">
+          <div class="lw-slot-photo">
+            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=1100&q=80" alt="落ち着いた美容サロンの内装">
           </div>
-          <div class="service-carousel">
-            <article>
-              <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80" alt="ヘアケア施術を受ける女性">
-              <div><span>90分 / 初回相談</span><h3>似合わせカット</h3><p>骨格と普段のセット時間に合わせて提案。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80" alt="ネイルケアの施術">
-              <div><span>75分 / ケア込み</span><h3>ナチュラルネイル</h3><p>仕事でも使いやすい色味を事前相談。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80" alt="メイクアップの施術">
-              <div><span>45分 / 印象相談</span><h3>眉メイクデザイン</h3><p>顔立ちと仕事シーンに合わせて設計。</p><button class="button secondary" type="button" data-open-chat>相談する</button></div>
-            </article>
-          </div>
-        </section>
-
-        <section class="salon-availability">
-          <div class="phone-preview" aria-label="予約画面プレビュー">
-            <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=900&q=80" alt="美容サロンの施術スペース">
-            <div class="slot-panel">
-              <strong>本日の空き枠</strong>
+          <div class="lw-slot-board">
+            <span class="section-label">Today</span>
+            <h2>空き時間を先に見せる</h2>
+            <div class="lw-slot-grid">
               <button type="button">13:30</button>
               <button type="button">16:00</button>
               <button type="button">18:30</button>
+              <button type="button">明日 11:00</button>
             </div>
-          </div>
-          <div>
-            <span class="section-label">Booking flow</span>
-            <h2>検索して、相談して、予約する</h2>
-            <ol class="number-list">
-              <li><strong>メニューを検索</strong><p>悩み、施術、エリア、日時から候補を絞ります。</p></li>
-              <li><strong>空き枠を確認</strong><p>所要時間と追加確認が必要な条件を先に見せます。</p></li>
-              <li><strong>事前相談を送信</strong><p>仕上がりイメージや不安をスタッフへ共有します。</p></li>
-            </ol>
+            <p>施術時間と事前相談を同じ導線に置くことで、メニュー選びの迷いを減らします。</p>
           </div>
         </section>
 
-        <section class="salon-reserve" id="reserve">
+        <section class="lw-salon-reserve" id="reserve">
           <div>
             <span class="section-label">Reserve</span>
-            <h2>予約相談フォーム</h2>
+            <h2>初回予約相談</h2>
             <p>希望日時とメニュー候補を受け取り、スタッフが折り返ししやすい形にまとめます。</p>
           </div>
           <form class="form-panel" data-demo-form>
-            <h3>初回予約相談</h3>
+            <h3>予約相談フォーム</h3>
             <div class="form-grid">
               <label class="field">お名前<input type="text" placeholder="山田 花子"></label>
               <label class="field">希望メニュー<input type="text" placeholder="髪質改善、眉メイクなど"></label>

@@ -22,71 +22,59 @@
         </div>
       </header>
 
-      <main class="page-v4 chatbot-ref-v4">
-        <section class="chatbot-hero">
-          <div class="chatbot-hero-copy">
-            <span class="kicker-line"><i data-lucide="messages-square"></i> AI support widget</span>
-            <h1>問い合わせを待たせず、商談につながる会話に変える</h1>
-            <p>Webチャット、FAQ、有人引き継ぎ、分析をまとめて導入。訪問者が離脱する前に答えます。</p>
-            <div class="hero-actions">
+      <main class="page-v6 lw-chatbot">
+        <section class="lw-chat-hero">
+          <div class="lw-hero-copy">
+            <span class="lw-kicker"><i data-lucide="messages-square"></i> AI support widget</span>
+            <h1>質問、FAQ、有人対応を1つのサポート画面にまとめる</h1>
+            <p>訪問者チャット、担当者Inbox、解決率を同時に見せ、導入後の運用を具体化します。</p>
+            <div class="lw-chat-input">
+              <span>Ask anything</span>
               <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
-              <a class="button secondary" href="#platform"><i data-lucide="play-circle"></i> デモを見る</a>
             </div>
           </div>
-          <div class="widget-builder" aria-label="チャットボット作成デモ">
-            <div class="builder-top"><span>Widget setup</span><strong>ready in 5 min</strong></div>
-            <label>サイトURL<input type="text" value="https://example.jp" aria-label="サイトURL"></label>
-            <button type="button">AIエージェントを生成</button>
-            <div class="builder-chat">
-              <p class="agent">料金と導入期間を教えてください。</p>
-              <p class="bot">目的を選ぶと、必要な設定と概算を案内できます。</p>
-            </div>
+          <div class="lw-helpdesk" aria-label="AIヘルプデスク画面">
+            <aside>
+              <strong>Inbox</strong>
+              <button class="active" type="button">料金を知りたい</button>
+              <button type="button">資料請求</button>
+              <button type="button">予約相談</button>
+            </aside>
+            <main>
+              <p class="visitor">導入費用はどれくらいですか？</p>
+              <p class="bot">月間問い合わせ数と用途から、目安を案内できます。</p>
+              <div><span>FAQ削減</span><span>予約受付</span><span>資料請求</span></div>
+            </main>
+            <section>
+              <span>Resolution</span><strong>72%</strong>
+              <span>Escalation</span><strong>18件</strong>
+              <span>Lead score</span><strong>High</strong>
+            </section>
           </div>
         </section>
 
-        <section class="chatbot-proof">
-          <article><strong>95%</strong><span>一次回答の自動化</span></article>
+        <section class="lw-chat-proof">
+          <article><strong>95%</strong><span>一次回答を自動化</span></article>
           <article><strong>1.2秒</strong><span>平均初回応答</span></article>
           <article><strong>5分</strong><span>タグ設置の目安</span></article>
           <article><strong>有人</strong><span>複雑な相談は引き継ぎ</span></article>
         </section>
 
-        <section class="chatbot-platform" id="platform">
+        <section class="lw-chat-platform" id="platform">
           <div>
-            <span class="section-label">Product view</span>
-            <h2>チャット画面と運用画面を同時に見せる</h2>
-            <p>訪問者側の会話、担当者側のInbox、解決率を1つの画面で見せ、導入後の運用を想像しやすくします。</p>
+            <span class="section-label">Workflow</span>
+            <h2>回答、振り分け、下書き、分析を順に見せる</h2>
+            <p>AIサポートLPの定番である機能カードではなく、担当者の作業がどう減るかを画面単位で見せます。</p>
           </div>
-          <div class="support-console">
-            <aside>
-              <strong>Inbox</strong>
-              <button class="active" type="button">料金を知りたい</button>
-              <button type="button">予約受付を導入したい</button>
-              <button type="button">営業時間の確認</button>
-            </aside>
-            <div class="conversation-pane">
-              <p class="visitor">導入費用はどれくらいですか？</p>
-              <p class="bot">月間問い合わせ数と用途によって変わります。用途を選んでください。</p>
-              <div class="choice-grid"><button type="button">FAQ削減</button><button type="button">予約受付</button><button type="button">資料請求</button></div>
-            </div>
-            <div class="metrics-pane">
-              <span>Resolution</span><strong>72%</strong>
-              <span>Escalation</span><strong>18件</strong>
-              <span>Lead score</span><strong>High</strong>
-            </div>
+          <div class="lw-chat-workcards">
+            <article><i data-lucide="book-open-check"></i><h3>FAQ回答</h3><p>既存HPと資料を読み込み、根拠つきで即答。</p></article>
+            <article><i data-lucide="route"></i><h3>自動振り分け</h3><p>予約、料金、クレーム、契約相談を分類。</p></article>
+            <article><i data-lucide="pen-line"></i><h3>返信下書き</h3><p>担当者が送る前提の返信案を生成。</p></article>
+            <article><i data-lucide="bar-chart-3"></i><h3>会話分析</h3><p>離脱質問と商談化した会話を可視化。</p></article>
           </div>
         </section>
 
-        <section class="chatbot-features">
-          <div class="feature-tabs" aria-label="チャットボット機能">
-            <article><i data-lucide="database"></i><h3>学習データ</h3><p>Webサイト、PDF、FAQを読み込み、回答根拠を揃えます。</p></article>
-            <article><i data-lucide="route"></i><h3>有人ルール</h3><p>契約、個人情報、クレームは人へ渡す条件を設定します。</p></article>
-            <article><i data-lucide="bar-chart-3"></i><h3>会話分析</h3><p>よくある質問、離脱ポイント、フォーム遷移率を見ます。</p></article>
-            <article><i data-lucide="globe-2"></i><h3>多言語対応</h3><p>訪問者の言語に合わせて一次回答を切り替えます。</p></article>
-          </div>
-        </section>
-
-        <section class="chatbot-faq" id="faq">
+        <section class="lw-chat-faq" id="faq">
           <div>
             <span class="section-label">FAQ</span>
             <h2>導入前の不安に先回りする</h2>
@@ -98,7 +86,7 @@
           </div>
         </section>
 
-        <section class="chatbot-contact" id="contact">
+        <section class="lw-chat-contact" id="contact">
           <div>
             <span class="section-label">Free check</span>
             <h2>導入できる問い合わせを無料診断</h2>
