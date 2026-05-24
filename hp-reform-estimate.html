@@ -3,97 +3,130 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>リフォーム会社HPデモ</title>
-    <meta name="description" content="概算見積、工事カテゴリ、施工前後、現地調査へつなげるリフォーム会社HPデモ。">
+    <title>RENOVA HOUSE | リフォーム会社HPデモ</title>
+    <meta name="description" content="現地調査前の相談、施工事例、概算確認までを自然につなげる地域リフォーム会社HPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-reform layout-reform">
+  <body class="layout-renova">
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar renova-topbar">
         <div class="topbar-inner">
-          <a class="brand" href="./index.html"><span class="brand-mark">R</span><span>Ridge Reform Works</span></a>
+          <a class="brand renova-brand" href="./index.html">
+            <span class="brand-mark renova-brand-mark">R</span>
+            <span>RENOVA HOUSE</span>
+          </a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
-          <nav class="navlinks" data-nav>
-            <a href="#calculator">概算</a>
+          <nav class="navlinks renova-nav" data-nav>
             <a href="#works">施工事例</a>
-            <a href="#estimate">見積相談</a>
+            <a href="#estimate">概算相談</a>
+            <a href="#process">流れ</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 相談する</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v6 lw-reform">
-        <section class="lw-reform-hero" id="calculator">
-          <div class="lw-hero-copy">
-            <span class="lw-kicker"><i data-lucide="calculator"></i> Renovation estimate</span>
-            <h1>住所と工事箇所から、見積前の不安を小さくする</h1>
-            <p>住所入力、概算比較、仕上がり確認、相談導線を1ページで完結します。</p>
-          </div>
-          <div class="lw-estimate-search" aria-label="リフォーム概算入力">
-            <label><span>住所または郵便番号</span><input type="text" value="杉並区 167-0051" aria-label="住所または郵便番号"></label>
-            <label><span>工事箇所</span><select aria-label="工事箇所"><option>浴室交換</option><option>キッチン</option><option>外壁塗装</option></select></label>
-            <button class="button primary" type="button"><i data-lucide="calculator"></i> 概算を見る</button>
-            <div><small>目安幅</small><strong>80万 - 140万円</strong><span>現地調査後に正式提示</span></div>
-          </div>
-        </section>
-
-        <section class="lw-quote-compare">
-          <div>
-            <span class="section-label">Quote compare</span>
-            <h2>工事候補を比較してから相談する</h2>
-            <p>金額だけでなく、現地で確認すべき条件も並べます。</p>
-          </div>
-          <div class="lw-quote-cards">
-            <article><b>浴室交換</b><strong>80万 - 180万円</strong><span>配管・断熱確認</span></article>
-            <article><b>キッチン</b><strong>90万 - 220万円</strong><span>電気容量・換気確認</span></article>
-            <article><b>外壁・屋根</b><strong>70万 - 210万円</strong><span>足場・劣化範囲確認</span></article>
-          </div>
-        </section>
-
-        <section class="lw-reform-visualizer" id="works">
-          <div class="lw-room-preview">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1300&q=80" alt="リフォーム後の明るいリビング">
-            <div class="lw-swatch-row"><span></span><span></span><span></span><span></span></div>
-          </div>
-          <div>
-            <span class="section-label">Design preview</span>
-            <h2>写真と仕上がりイメージで相談範囲を決める</h2>
-            <p>施工前後をただ並べるのではなく、色味、設備、優先順位を選ぶ相談ボードとして見せます。</p>
-            <ol class="lw-step-list">
-              <li><strong>写真を送る</strong><p>現状の困りごとと寸法を確認。</p></li>
-              <li><strong>仕上がりを選ぶ</strong><p>色、素材、設備グレードを整理。</p></li>
-              <li><strong>現地調査へ進む</strong><p>見積もりに必要な確認だけに絞る。</p></li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="lw-reform-request" id="estimate">
-          <div class="lw-renovation-packet">
-            <header>
-              <span class="section-label">Site packet</span>
-              <h2>現地調査の前に、工事情報をパケット化する</h2>
-              <p>写真、工事範囲、予算幅を分けて見せることで、見積前の不安を減らします。</p>
-            </header>
-            <div class="lw-packet-grid">
-              <article class="photo">
-                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1000&q=80" alt="リフォーム後の洗面スペース">
-                <span>写真 3枚</span>
-              </article>
-              <article><span>工事範囲</span><strong>浴室交換 + 洗面補修</strong><p>配管まわりと床材の状態を現地で確認。</p></article>
-              <article><span>希望時期</span><strong>3か月以内</strong><p>在庫と職人の空き状況を優先確認。</p></article>
-              <article><span>概算</span><strong>80万 - 140万円</strong><p>正式見積は現地調査後に提示。</p></article>
+      <main class="renova-page">
+        <section class="renova-hero" aria-labelledby="renova-title">
+          <div class="renova-hero-copy">
+            <span class="renova-kicker">Local renovation / estimate support</span>
+            <h1 id="renova-title">暮らしの違和感を、現地調査前に整理する。</h1>
+            <p>キッチン、LDK、水回り、収納。写真を送る前の相談内容をチャットで整理し、担当者が概算と現地調査を案内しやすい状態にします。</p>
+            <div class="renova-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="calculator"></i> 概算相談を始める</button>
+              <a class="button secondary" href="#works"><i data-lucide="house"></i> 施工事例を見る</a>
             </div>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 概算をチャットで確認</button>
           </div>
+          <figure class="renova-hero-photo">
+            <img src="./assets/images/renova-hero.webp" width="1586" height="992" alt="リフォーム相談で図面を確認している様子">
+          </figure>
+          <div class="renova-hero-panel" aria-label="相談前チェック">
+            <strong>相談前に整理すること</strong>
+            <span>場所 / 築年数 / 困りごと / 希望時期</span>
+          </div>
+        </section>
+
+        <section class="renova-intro" id="estimate">
+          <div>
+            <span class="renova-kicker">Before visit</span>
+            <h2>いきなり訪問ではなく、まず相談票を作る。</h2>
+            <p>リフォーム相談で不安になりやすい「何を伝えればいいか」を先に整理します。担当者は現地調査前に状況を把握でき、見積もりの精度を上げやすくなります。</p>
+          </div>
+          <div class="renova-check-grid">
+            <article><span>01</span><strong>写真の有無</strong><p>現地写真、図面、設備品番があるかを確認。</p></article>
+            <article><span>02</span><strong>工事範囲</strong><p>全面改修か、部分改修か、優先順位を整理。</p></article>
+            <article><span>03</span><strong>予算感</strong><p>希望額と上限、補助金確認の必要性を把握。</p></article>
+          </div>
+        </section>
+
+        <section class="renova-works" id="works">
+          <div class="renova-section-head">
+            <span class="renova-kicker">Selected works</span>
+            <h2>完成イメージを、事例で先に合わせる。</h2>
+          </div>
+          <div class="renova-work-layout">
+            <article class="renova-work-main">
+              <img src="./assets/images/renova-work.webp" width="1448" height="1086" alt="木と白を基調にしたリフォーム後のリビング">
+              <div>
+                <span>LDK renovation</span>
+                <strong>築32年戸建てのLDK改修</strong>
+                <p>壁付けキッチンを対面に変更し、収納と家事動線を再設計。</p>
+              </div>
+            </article>
+            <div class="renova-work-list">
+              <article><span>Kitchen</span><strong>対面キッチン化</strong><p>配管位置と収納量を先に確認。</p></article>
+              <article><span>Bath</span><strong>浴室・洗面改修</strong><p>断熱、段差、清掃性を整理。</p></article>
+              <article><span>Storage</span><strong>造作収納</strong><p>生活用品の量から設計。</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="renova-estimate-board">
+          <figure>
+            <img src="./assets/images/renova-estimate.webp" width="1672" height="941" alt="リフォームの素材サンプルと概算見積もりの準備">
+          </figure>
+          <div>
+            <span class="renova-kicker">Estimate board</span>
+            <h2>概算は、価格表より相談内容で変わる。</h2>
+            <p>工事範囲、設備グレード、現地状況を分けて聞くことで、営業担当が返しやすい相談票にします。</p>
+            <dl class="renova-price-guide">
+              <div><dt>キッチン</dt><dd>80万から</dd></div>
+              <div><dt>浴室</dt><dd>90万から</dd></div>
+              <div><dt>LDK</dt><dd>180万から</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="renova-process" id="process">
+          <div class="renova-section-head is-centered">
+            <span class="renova-kicker">Process</span>
+            <h2>相談から現地調査までの不安を減らす。</h2>
+          </div>
+          <div class="renova-process-line">
+            <article><span>01</span><strong>チャット相談</strong><p>場所、悩み、希望時期を整理。</p></article>
+            <article><span>02</span><strong>写真・図面確認</strong><p>必要な資料を案内。</p></article>
+            <article><span>03</span><strong>概算の目安</strong><p>範囲とグレード別に確認。</p></article>
+            <article><span>04</span><strong>現地調査</strong><p>担当者が訪問日程を調整。</p></article>
+          </div>
+        </section>
+
+        <section class="renova-final" id="contact">
+          <div>
+            <span class="renova-kicker">Contact</span>
+            <h2>写真を送る前に、相談内容をまとめる。</h2>
+            <p>工事内容が固まっていなくても、困っている場所から相談できます。チャットで一次整理し、担当者確認へつなげます。</p>
+          </div>
+          <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> リフォーム相談を開く</button>
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer renova-footer">
         <div class="footer-inner">
           <a href="./index.html">デモ一覧へ戻る</a>
-          <span>Ridge Reform Works demo</span>
+          <span>RENOVA HOUSE demo</span>
         </div>
       </footer>
     </div>
+
     <div data-chatbot data-bot="reform"></div>
     <script async src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" onload="window.lucide&&window.lucide.createIcons&&window.lucide.createIcons()"></script>
     <script src="./assets/app.js"></script>

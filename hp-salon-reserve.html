@@ -3,126 +3,193 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>美容サロン予約HPデモ</title>
-    <meta name="description" content="検索、カテゴリ、メニュー、予約相談までを持つ美容サロン予約HPデモ。">
+    <title>LUMINA HAIR ATELIER | 美容サロン予約HPデモ</title>
+    <meta name="description" content="初回相談、メニュー選び、空き枠確認までを自然につなげる美容サロン予約HPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-salon layout-salon">
+  <body class="layout-lumina">
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar lumina-topbar">
         <div class="topbar-inner">
-          <a class="brand" href="./index.html"><span class="brand-mark">S</span><span>Sora Beauty Lounge</span></a>
-          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
-          <nav class="navlinks" data-nav>
-            <a href="#categories">カテゴリ</a>
-            <a href="#services">メニュー</a>
-            <a href="#reserve">予約</a>
+          <a class="brand lumina-brand" href="./index.html">
+            <span class="brand-mark lumina-brand-mark">L</span>
+            <span>LUMINA HAIR ATELIER</span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー">
+            <i data-lucide="menu"></i>
+          </button>
+          <nav class="navlinks lumina-nav" data-nav>
+            <a href="#concept">Concept</a>
+            <a href="#menu">Menu</a>
+            <a href="#stylist">Stylist</a>
+            <a href="#reserve" class="lumina-nav-button" data-open-chat>Reserve</a>
           </nav>
         </div>
       </header>
 
-      <main class="page-v6 lw-salon">
-        <section class="lw-salon-hero">
-          <div class="lw-hero-copy">
-            <span class="lw-kicker"><i data-lucide="sparkles"></i> Beauty booking marketplace</span>
-            <h1>メニュー、場所、空き時間から美容サロンを選ぶ</h1>
-            <p>最初の画面で「何を・どこで・いつ」を決められる予約HPにします。</p>
+      <main class="lumina-page">
+        <section class="lumina-hero" aria-labelledby="lumina-title">
+          <div class="lumina-hero-copy">
+            <span class="lumina-eyebrow">Private hair atelier / reservation demo</span>
+            <h1 id="lumina-title">初回の不安まで、予約前に整える。</h1>
+            <p>LUMINAは、髪質・悩み・来店目的を予約前にヒアリングし、当日のカウンセリングを深くする美容サロンHPデモです。</p>
+            <div class="lumina-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="calendar-check"></i> 空き枠を相談する</button>
+              <a class="button secondary" href="#menu"><i data-lucide="scissors"></i> メニューを見る</a>
+            </div>
+            <dl class="lumina-proof" aria-label="予約導線の特徴">
+              <div>
+                <dt>15min</dt>
+                <dd>初回カウンセリング枠</dd>
+              </div>
+              <div>
+                <dt>3step</dt>
+                <dd>悩みからメニュー提案</dd>
+              </div>
+              <div>
+                <dt>1:1</dt>
+                <dd>担当者確認へ引き継ぎ</dd>
+              </div>
+            </dl>
           </div>
-          <div class="lw-search-panel" aria-label="サロン予約検索">
-            <label><span>メニュー</span><input type="text" value="髪質改善・眉カット" aria-label="メニュー"></label>
-            <label><span>エリア</span><input type="text" value="表参道" aria-label="エリア"></label>
-            <label><span>日時</span><input type="text" value="今日 18:00以降" aria-label="日時"></label>
-            <button class="button primary" type="button"><i data-lucide="search"></i> 空き枠を探す</button>
-          </div>
-        </section>
-
-        <section class="lw-salon-categories" id="categories">
-          <a href="#services"><i data-lucide="scissors"></i><span>Hair</span></a>
-          <a href="#services"><i data-lucide="sparkles"></i><span>Nail</span></a>
-          <a href="#services"><i data-lucide="eye"></i><span>Brows</span></a>
-          <a href="#services"><i data-lucide="flower-2"></i><span>Spa</span></a>
-          <a href="#services"><i data-lucide="palette"></i><span>Makeup</span></a>
-        </section>
-
-        <section class="lw-salon-listings" id="services">
-          <div class="lw-section-row">
+          <figure class="lumina-hero-photo">
+            <img src="./assets/images/lumina-salon-hero.webp" width="1586" height="992" alt="落ち着いた美容サロンでスタイリストが来店客の髪を確認している様子">
+          </figure>
+          <aside class="lumina-reserve-card" aria-label="今週の予約枠">
             <div>
-              <span class="section-label">Recommended</span>
-              <h2>近くで予約しやすいメニュー</h2>
+              <span>This week</span>
+              <strong>初回相談枠</strong>
             </div>
-            <a href="#reserve">予約相談へ</a>
+            <ul>
+              <li><time>Tue 11:30</time><span>Cut + counseling</span></li>
+              <li><time>Thu 16:00</time><span>Care diagnosis</span></li>
+              <li><time>Sat 10:00</time><span>Stylist confirm</span></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="lumina-concept" id="concept">
+          <div class="lumina-section-copy">
+            <span class="lumina-section-label">Concept</span>
+            <h2>似合う髪は、施術前の理解で決まる。</h2>
+            <p>写真の雰囲気だけで予約させず、髪質、履歴、生活時間、悩みを先に受け取る構成にしています。スタッフは来店前から提案の準備ができ、お客様は初回でも安心して予約できます。</p>
           </div>
-          <div class="lw-salon-cards">
+          <figure class="lumina-detail-photo">
+            <img src="./assets/images/lumina-salon-detail.webp" width="1448" height="1086" alt="髪の艶を確認しながら丁寧にスタイリングしている手元">
+          </figure>
+          <div class="lumina-concept-list">
             <article>
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="ヘアサロンで施術を受ける女性">
-              <div><span>★ 4.9 / 表参道</span><h3>似合わせカット相談</h3><p>90分・初回カウンセリング込み</p></div>
-              <button class="button secondary" type="button" data-open-chat>相談する</button>
+              <span>01</span>
+              <strong>悩みを先に受け取る</strong>
+              <p>髪の広がり、色落ち、朝のセット時間まで予約前に整理。</p>
             </article>
             <article>
-              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="ネイルデザインの手元">
-              <div><span>★ 4.8 / 恵比寿</span><h3>ナチュラルネイル</h3><p>75分・ケア込み</p></div>
-              <button class="button secondary" type="button" data-open-chat>相談する</button>
+              <span>02</span>
+              <strong>迷うメニューを減らす</strong>
+              <p>初回向け、メンテナンス、集中ケアの候補を自然に提示。</p>
             </article>
             <article>
-              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="メイク用品と美容スペース">
-              <div><span>★ 4.7 / 渋谷</span><h3>眉メイクデザイン</h3><p>45分・印象相談</p></div>
-              <button class="button secondary" type="button" data-open-chat>相談する</button>
+              <span>03</span>
+              <strong>人の確認へ渡す</strong>
+              <p>日時と希望内容をスタッフが確認できる形にまとめる。</p>
             </article>
           </div>
         </section>
 
-        <section class="lw-salon-slots">
-          <div class="lw-slot-photo">
-            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=1100&q=80" alt="落ち着いた美容サロンの内装">
+        <section class="lumina-menu" id="menu">
+          <div class="lumina-section-copy is-wide">
+            <span class="lumina-section-label">Menu design</span>
+            <h2>選ぶより、相談して決めるメニュー構成。</h2>
           </div>
-          <div class="lw-slot-board">
-            <span class="section-label">Today</span>
-            <h2>空き時間を先に見せる</h2>
-            <div class="lw-slot-grid">
-              <button type="button">13:30</button>
-              <button type="button">16:00</button>
-              <button type="button">18:30</button>
-              <button type="button">明日 11:00</button>
-            </div>
-            <p>施術時間と事前相談を同じ導線に置くことで、メニュー選びの迷いを減らします。</p>
+          <div class="lumina-menu-board">
+            <article>
+              <img src="./assets/images/lumina-salon-detail.webp" width="1448" height="1086" alt="艶のある髪のケア施術">
+              <div>
+                <span>Care cut</span>
+                <strong>カット + 髪質カウンセリング</strong>
+                <p>骨格、髪質、普段のセット時間から扱いやすい形へ。</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/images/lumina-salon-lounge.webp" width="1672" height="941" alt="予約制サロンの落ち着いたラウンジ">
+              <div>
+                <span>Color plan</span>
+                <strong>透明感カラー + 履歴確認</strong>
+                <p>過去のカラー履歴を先に確認し、当日の不安を減らす。</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/images/lumina-salon-stylist.webp" width="1122" height="1402" alt="落ち着いた美容サロンのスタイリスト">
+              <div>
+                <span>First visit</span>
+                <strong>初回診断 + 予約前相談</strong>
+                <p>メニュー未定でも相談から始められる入口を用意。</p>
+              </div>
+            </article>
           </div>
         </section>
 
-        <section class="lw-salon-reserve" id="reserve">
-          <div class="lw-reserve-board">
-            <div class="lw-reserve-heading">
-              <span class="section-label">Reserve</span>
-              <h2>メニューを選んだあと、空き枠まで一気に見せる</h2>
-              <p>予約アプリの確認画面のように、担当・日時・事前確認を同じ面で整理します。</p>
+        <section class="lumina-stylist" id="stylist">
+          <figure>
+            <img src="./assets/images/lumina-salon-stylist.webp" width="1122" height="1402" alt="LUMINAのシニアスタイリスト">
+          </figure>
+          <div class="lumina-stylist-copy">
+            <span class="lumina-section-label">Lead stylist</span>
+            <h2>担当者の顔が見えるから、初回予約が軽くなる。</h2>
+            <p>スタイリスト紹介は実績の羅列ではなく、初回の相談で何を見ているかを伝える構成にしています。予約前チャットで内容を集め、担当者が確認しやすい状態に整えます。</p>
+            <div class="lumina-stylist-notes">
+              <article><strong>髪質</strong><span>広がり、クセ、乾燥感</span></article>
+              <article><strong>履歴</strong><span>カラー、パーマ、ブリーチ</span></article>
+              <article><strong>生活</strong><span>朝のセット時間、職場の印象</span></article>
             </div>
-            <div class="lw-time-strip">
-              <button type="button">今日 18:30</button>
-              <button type="button">明日 11:00</button>
-              <button type="button">土曜 15:00</button>
-              <button type="button">日曜 10:30</button>
+          </div>
+        </section>
+
+        <section class="lumina-reserve" id="reserve">
+          <div class="lumina-section-copy">
+            <span class="lumina-section-label">Reservation</span>
+            <h2>空き枠を見せて、最後はチャットで受ける。</h2>
+            <p>ページ下部に汎用フォームを置かず、今週の空き枠と予約前確認を見せます。お客様は「何を送ればいいか」が分かった状態で相談できます。</p>
+            <div class="lumina-intake-card" aria-label="予約前に確認する内容">
+              <span>Before reservation</span>
+              <strong>相談時に聞くことは3つだけ</strong>
+              <ul>
+                <li>髪の悩み、理想の雰囲気</li>
+                <li>カラー、パーマ、ブリーチ履歴</li>
+                <li>希望日時とメニュー未定かどうか</li>
+              </ul>
             </div>
-            <div class="lw-reserve-details">
-              <article>
-                <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=900&q=80" alt="美容サロンで髪を整えるスタイリスト">
-                <div><span>Menu</span><strong>似合わせカット相談</strong><p>髪質、普段のセット時間、希望イメージを事前に確認。</p></div>
-              </article>
-              <aside>
-                <strong>予約前チェック</strong>
-                <p>90分 / 事前相談あり / 担当指名なし</p>
-                <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 予約前に相談する</button>
-              </aside>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 予約前に相談する</button>
+          </div>
+          <div class="lumina-reserve-board">
+            <figure>
+              <img src="./assets/images/lumina-salon-lounge.webp" width="1672" height="941" alt="落ち着いた予約制美容サロンのラウンジ">
+            </figure>
+            <div class="lumina-reserve-note">
+              <span>Staff handoff</span>
+              <strong>チャットで受けた内容を、担当者の確認メモへ。</strong>
+              <p>初回でも「何を相談すればいいか」が分かる状態にして、予約前の離脱を減らします。</p>
+            </div>
+            <div class="lumina-slot-grid" aria-label="空き枠サンプル">
+              <span>Tue 11:30</span>
+              <span>Wed 18:00</span>
+              <span>Thu 16:00</span>
+              <span>Fri 13:30</span>
+              <span>Sat 10:00</span>
+              <span>Sun 15:30</span>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer lumina-footer">
         <div class="footer-inner">
-          <a href="./index.html">デモ一覧へ戻る</a>
-          <span>Sora Beauty Lounge demo</span>
+          <span>LUMINA HAIR ATELIER</span>
+          <span>Reservation homepage demo</span>
         </div>
       </footer>
     </div>
+
     <div data-chatbot data-bot="salon"></div>
     <script async src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" onload="window.lucide&&window.lucide.createIcons&&window.lucide.createIcons()"></script>
     <script src="./assets/app.js"></script>

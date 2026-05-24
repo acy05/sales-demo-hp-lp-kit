@@ -3,113 +3,106 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>チャットボット導入LPデモ</title>
-    <meta name="description" content="チャットボット導入の価値、デモ、機能、FAQ、設置前チェックまでを持つLPデモ。">
+    <title>ChatFlow Assist | チャットボット導入LPデモ</title>
+    <meta name="description" content="問い合わせ削減、有人引き継ぎ、資料請求率改善を訴求するチャットボット導入LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-chatbot layout-chatbot">
+  <body class="layout-chatflow">
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar chatflow-topbar">
         <div class="topbar-inner">
-          <a class="brand" href="./index.html"><span class="brand-mark">C</span><span>Chat Convert</span></a>
+          <a class="brand chatflow-brand" href="./index.html"><span class="brand-mark chatflow-brand-mark">C</span><span>ChatFlow Assist</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
-          <nav class="navlinks" data-nav>
-            <a href="#platform">デモ</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">診断</a>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 診断</button>
+          <nav class="navlinks chatflow-nav" data-nav>
+            <a href="#problem">課題</a>
+            <a href="#flow">導入後</a>
+            <a href="#setup">診断</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 無料診断</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v6 lw-chatbot">
-        <section class="lw-chat-hero">
-          <div class="lw-hero-copy">
-            <span class="lw-kicker"><i data-lucide="messages-square"></i> AI support widget</span>
-            <h1>質問、FAQ、有人対応を1つのサポート画面にまとめる</h1>
-            <p>訪問者チャット、担当者Inbox、解決率を同時に見せ、導入後の運用を具体化します。</p>
-            <div class="lw-chat-input">
-              <span>Ask anything</span>
-              <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を試す</button>
+      <main class="chatflow-page">
+        <section class="chatflow-hero">
+          <div class="chatflow-hero-copy">
+            <span class="chatflow-kicker">AI chat conversion LP</span>
+            <h1>問い合わせ対応を減らし、商談前の情報をそろえる。</h1>
+            <p>FAQ回答、資料請求、予約前相談、有人引き継ぎまで。チャットボットを「置くだけ」ではなく、問い合わせの質を上げる導線として見せるLPです。</p>
+            <div class="chatflow-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 導入診断を始める</button>
+              <a class="button secondary" href="#flow"><i data-lucide="route"></i> 導入後の流れ</a>
+            </div>
+            <div class="chatflow-metrics" aria-label="効果指標サンプル">
+              <article><strong>24h</strong><span>営業時間外も受付</span></article>
+              <article><strong>3分</strong><span>相談内容を自動整理</span></article>
+              <article><strong>有人</strong><span>重要相談は担当へ</span></article>
             </div>
           </div>
-          <div class="lw-helpdesk" aria-label="AIヘルプデスク画面">
-            <aside>
-              <strong>Inbox</strong>
-              <button class="active" type="button">料金を知りたい</button>
-              <button type="button">資料請求</button>
-              <button type="button">予約相談</button>
-            </aside>
-            <main>
-              <p class="visitor">導入費用はどれくらいですか？</p>
-              <p class="bot">月間問い合わせ数と用途から、目安を案内できます。</p>
-              <div><span>FAQ削減</span><span>予約受付</span><span>資料請求</span></div>
-            </main>
-            <section>
-              <span>Resolution</span><strong>72%</strong>
-              <span>Escalation</span><strong>18件</strong>
-              <span>Lead score</span><strong>High</strong>
-            </section>
+          <figure class="chatflow-visual">
+            <img src="./assets/images/chatflow-hero.webp" width="1568" height="1003" alt="チャットボットと担当者InboxをまとめたUIビジュアル">
+          </figure>
+        </section>
+
+        <section class="chatflow-problem" id="problem">
+          <div class="chatflow-section-copy">
+            <span class="chatflow-kicker">Problem</span>
+            <h2>同じ質問に答え続けるほど、商談前の確認が薄くなる。</h2>
+          </div>
+          <div class="chatflow-problem-grid">
+            <article><span>01</span><strong>FAQ対応が繰り返し</strong><p>営業時間外の質問が翌日に積み上がる。</p></article>
+            <article><span>02</span><strong>資料請求の温度感が不明</strong><p>何に興味があるか分からないまま追客する。</p></article>
+            <article><span>03</span><strong>有人対応の判断が曖昧</strong><p>人が返すべき相談と自動回答でよい質問が混ざる。</p></article>
           </div>
         </section>
 
-        <section class="lw-chat-proof">
-          <article><strong>95%</strong><span>一次回答を自動化</span></article>
-          <article><strong>1.2秒</strong><span>平均初回応答</span></article>
-          <article><strong>5分</strong><span>タグ設置の目安</span></article>
-          <article><strong>有人</strong><span>複雑な相談は引き継ぎ</span></article>
-        </section>
-
-        <section class="lw-chat-platform" id="platform">
-          <div>
-            <span class="section-label">Workflow</span>
-            <h2>回答、振り分け、下書き、分析を順に見せる</h2>
-            <p>AIサポートLPの定番である機能カードではなく、担当者の作業がどう減るかを画面単位で見せます。</p>
+        <section class="chatflow-offer">
+          <div class="chatflow-offer-card">
+            <span>Offer</span>
+            <h2>まずは「よくある質問」と「人に渡す条件」だけ決める。</h2>
+            <p>全ページに一気に導入せず、料金、予約、資料請求など離脱が起きやすいページから始めます。</p>
           </div>
-          <div class="lw-chat-workcards">
-            <article><i data-lucide="book-open-check"></i><h3>FAQ回答</h3><p>既存HPと資料を読み込み、根拠つきで即答。</p></article>
-            <article><i data-lucide="route"></i><h3>自動振り分け</h3><p>予約、料金、クレーム、契約相談を分類。</p></article>
-            <article><i data-lucide="pen-line"></i><h3>返信下書き</h3><p>担当者が送る前提の返信案を生成。</p></article>
-            <article><i data-lucide="bar-chart-3"></i><h3>会話分析</h3><p>離脱質問と商談化した会話を可視化。</p></article>
+          <div class="chatflow-offer-list">
+            <article><i data-lucide="book-open-check"></i><strong>FAQ回答</strong><p>既存ページや資料の内容を短く案内。</p></article>
+            <article><i data-lucide="user-check"></i><strong>有人引き継ぎ</strong><p>契約、個人情報、例外相談は担当者へ。</p></article>
+            <article><i data-lucide="chart-no-axes-combined"></i><strong>会話分析</strong><p>離脱質問と商談化した質問を可視化。</p></article>
           </div>
         </section>
 
-        <section class="lw-chat-faq" id="faq">
-          <div>
-            <span class="section-label">FAQ</span>
-            <h2>導入前の不安に先回りする</h2>
-          </div>
-          <div class="faq-list">
-            <details open><summary>人の対応は残せますか？</summary><p>残せます。チャットは一次受付と整理に限定し、契約・最終判断・個別対応は担当者へ引き継ぎます。</p></details>
-            <details><summary>どのページに置くべきですか？</summary><p>料金、サービス詳細、予約、資料請求など、迷いが発生するページから設置します。</p></details>
-            <details><summary>何を学習させますか？</summary><p>既存HP、FAQ、サービス資料、料金表、対応できない条件を整理して登録します。</p></details>
+        <section class="chatflow-flow" id="flow">
+          <figure>
+            <img src="./assets/images/chatflow-workflow.webp" width="1672" height="941" alt="問い合わせからFAQ回答、有人引き継ぎ、分析へ進むワークフロー">
+          </figure>
+          <div class="chatflow-flow-copy">
+            <span class="chatflow-kicker">After setup</span>
+            <h2>問い合わせを、回答ではなく次の行動へ流す。</h2>
+            <ol>
+              <li><span>01</span><strong>質問を受ける</strong><p>料金、予約、資料請求、導入相談を分類。</p></li>
+              <li><span>02</span><strong>不足情報を聞く</strong><p>業種、希望時期、課題感を追加で確認。</p></li>
+              <li><span>03</span><strong>担当者へ渡す</strong><p>会話要約と温度感を添えて通知。</p></li>
+            </ol>
           </div>
         </section>
 
-        <section class="lw-chat-contact" id="contact">
-          <div class="lw-widget-lab">
-            <aside>
-              <span class="section-label">Widget setup</span>
-              <h2>導入可否を、設定画面として見せる</h2>
-              <p>FAQ、料金ページ、有人引き継ぎを順に確認し、設置できる状態かを判断します。</p>
-              <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を開く</button>
-            </aside>
-            <div class="lw-widget-screen">
-              <header><strong>Setup checklist</strong><span>2 / 3 ready</span></header>
-              <label><input type="checkbox" checked> よくある質問が10件以上ある</label>
-              <label><input type="checkbox" checked> 料金・対応範囲ページがある</label>
-              <label><input type="checkbox"> 有人引き継ぎ条件を決めていない</label>
-              <div class="lw-widget-preview"><span>Preview</span><p>料金について知りたいです</p><strong>用途と件数から目安を案内できます。</strong></div>
+        <section class="chatflow-setup" id="setup">
+          <div class="chatflow-setup-panel">
+            <div>
+              <span class="chatflow-kicker">Quick diagnosis</span>
+              <h2>このLPでは、診断ボットまで見せる。</h2>
+              <p>商談相手に「実際にどう動くか」をその場で触ってもらえるよう、右下チャットとCTAを連動させています。</p>
             </div>
+            <div class="chatflow-checklist">
+              <span>設置前チェック</span>
+              <label><input type="checkbox" checked> FAQが10件以上ある</label>
+              <label><input type="checkbox" checked> 資料請求か予約導線がある</label>
+              <label><input type="checkbox"> 有人引き継ぎ条件が未整理</label>
+            </div>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> 導入診断を開く</button>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer-inner">
-          <a href="./index.html">デモ一覧へ戻る</a>
-          <span>Chat Convert LP demo</span>
-        </div>
+      <footer class="footer chatflow-footer">
+        <div class="footer-inner"><a href="./index.html">デモ一覧へ戻る</a><span>ChatFlow Assist LP demo</span></div>
       </footer>
     </div>
     <div data-chatbot data-bot="chatbot"></div>

@@ -3,101 +3,121 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>採用強化LPデモ</title>
-    <meta name="description" content="求人検索、職種カード、働き方、候補者導線を持つ採用強化LPデモ。">
+    <title>Harbor Careers | 採用強化LPデモ</title>
+    <meta name="description" content="応募前の不安解消、職種理解、選考導線までを見せる採用強化LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-recruit layout-recruit">
+  <body class="layout-harbor">
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar harbor-topbar">
         <div class="topbar-inner">
-          <a class="brand" href="./index.html"><span class="brand-mark">H</span><span>Harbor Careers</span></a>
+          <a class="brand harbor-brand" href="./index.html"><span class="brand-mark harbor-brand-mark">H</span><span>Harbor Careers</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
-          <nav class="navlinks" data-nav>
-            <a href="#roles">求人</a>
+          <nav class="navlinks harbor-nav" data-nav>
             <a href="#culture">働き方</a>
-            <a href="#entry">面談</a>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問</button>
+            <a href="#roles">求人</a>
+            <a href="#entry">応募前質問</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 質問する</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v6 lw-recruit">
-        <section class="lw-recruit-hero">
-          <div class="lw-hero-copy">
-            <span class="lw-kicker"><i data-lucide="briefcase-business"></i> Careers</span>
-            <h1>働き方を見てから、自分に合う求人を探す</h1>
-            <p>カルチャー、求人検索、応募前質問を一続きにして、応募前の不安を減らします。</p>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問</button>
-          </div>
-          <div class="lw-career-photo">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" alt="採用面談とチームミーティング">
-          </div>
-        </section>
-
-        <section class="lw-job-search">
-          <div class="lw-search-panel" aria-label="求人検索">
-            <label><span>職種</span><input type="text" value="カスタマーサポート" aria-label="職種"></label>
-            <label><span>勤務地</span><input type="text" value="東京 / リモート" aria-label="勤務地"></label>
-            <label><span>条件</span><input type="text" value="未経験可" aria-label="条件"></label>
-            <button class="button primary" type="button"><i data-lucide="search"></i> 求人を検索</button>
-          </div>
-        </section>
-
-        <section class="lw-recruit-culture" id="culture">
-          <div>
-            <span class="section-label">Culture</span>
-            <h2>応募前に、入社後の見え方を揃える</h2>
-            <p>ミッションだけで引っ張らず、最初の30日、評価される行動、働き方を具体的に出します。</p>
-          </div>
-          <div class="lw-value-grid">
-            <article><strong>30日オンボード</strong><span>最初に任せる仕事を明確化</span></article>
-            <article><strong>週3リモート</strong><span>チーム同期日と集中日を分ける</span></article>
-            <article><strong>未経験歓迎</strong><span>研修とレビューで立ち上がる</span></article>
-          </div>
-        </section>
-
-        <section class="lw-open-roles" id="roles">
-          <aside>
-            <strong>Filter</strong>
-            <label><input type="checkbox" checked> 未経験可</label>
-            <label><input type="checkbox" checked> リモートあり</label>
-            <label><input type="checkbox"> 週3から相談</label>
-            <label><input type="checkbox"> 副業OK</label>
-          </aside>
-          <div>
-            <span class="section-label">Open roles</span>
-            <h2>募集中の職種</h2>
-            <article class="featured"><div><span>Customer Success</span><h3>カスタマーサポート</h3><p>未経験可 / 週3リモート / 顧客対応 / 月給25万円から</p></div><button class="button secondary" type="button" data-open-chat>質問する</button></article>
-            <article><div><span>Creative</span><h3>コンテンツ制作</h3><p>記事・SNS・採用広報 / ポートフォリオ歓迎</p></div><button class="button secondary" type="button" data-open-chat>質問する</button></article>
-            <article><div><span>Operations</span><h3>事業推進アシスタント</h3><p>数字管理 / 日程調整 / 改善提案</p></div><button class="button secondary" type="button" data-open-chat>質問する</button></article>
-          </div>
-        </section>
-
-        <section class="lw-recruit-entry" id="entry">
-          <div class="lw-career-hub">
-            <header>
-              <span class="section-label">Job search</span>
-              <h2>求人検索から選考ステップまでを1画面にする</h2>
-              <p>候補者が応募前に確認したい条件、質問、面談までの流れを先に見せます。</p>
-            </header>
-            <div class="lw-role-search">
-              <span>Role</span><strong>カスタマーサポート / 東京・リモート</strong><button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問を開く</button>
+      <main class="harbor-page">
+        <section class="harbor-hero">
+          <div class="harbor-hero-copy">
+            <span class="harbor-kicker">Recruiting LP / candidate first</span>
+            <h1>応募する前に、働き方を確かめられる。</h1>
+            <p>求人票だけでは伝わらない、最初の30日、評価される行動、チームの雰囲気を先に見せる採用LPです。</p>
+            <div class="harbor-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前に質問する</button>
+              <a class="button secondary" href="#roles"><i data-lucide="briefcase-business"></i> 募集中の職種</a>
             </div>
-            <div class="lw-career-steps">
-              <article><span>01</span><strong>求人を保存</strong><p>条件が近い職種を選ぶ</p></article>
-              <article><span>02</span><strong>質問する</strong><p>未経験、働き方、評価を確認</p></article>
-              <article><span>03</span><strong>面談へ進む</strong><p>応募前に30分だけ話す</p></article>
+          </div>
+          <figure class="harbor-hero-image">
+            <img src="./assets/images/harbor-hero.webp" width="1586" height="992" alt="採用面談で候補者とチームが話している様子">
+          </figure>
+          <div class="harbor-search-card" aria-label="求人検索">
+            <label>職種<span>カスタマーサクセス</span></label>
+            <label>働き方<span>東京 / 週3リモート</span></label>
+            <label>条件<span>未経験可</span></label>
+          </div>
+        </section>
+
+        <section class="harbor-culture" id="culture">
+          <figure>
+            <img src="./assets/images/harbor-culture.webp" width="1448" height="1086" alt="チームでオンボーディングとプロジェクトレビューをしている様子">
+          </figure>
+          <div>
+            <span class="harbor-kicker">Culture</span>
+            <h2>入社後の見え方を、応募前にそろえる。</h2>
+            <p>ミッションだけで引っ張らず、最初に任せる仕事、学び方、評価される行動を具体化します。</p>
+            <div class="harbor-culture-grid">
+              <article><strong>30日オンボード</strong><span>最初の仕事を明確化</span></article>
+              <article><strong>レビュー文化</strong><span>週次で相談できる</span></article>
+              <article><strong>未経験歓迎</strong><span>研修と実務で立ち上がる</span></article>
             </div>
+          </div>
+        </section>
+
+        <section class="harbor-roles" id="roles">
+          <div class="harbor-section-head">
+            <span class="harbor-kicker">Open roles</span>
+            <h2>職種カードは、条件より不安解消を先に出す。</h2>
+          </div>
+          <div class="harbor-role-list">
+            <article class="is-featured">
+              <span>Customer Success</span>
+              <h3>カスタマーサクセス</h3>
+              <p>顧客対応、導入支援、改善提案。未経験でも研修から開始。</p>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
+            <article>
+              <span>Creative</span>
+              <h3>コンテンツ制作</h3>
+              <p>SNS、記事、採用広報。ポートフォリオ歓迎。</p>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
+            <article>
+              <span>Operations</span>
+              <h3>事業推進アシスタント</h3>
+              <p>数字管理、日程調整、改善提案を支える仕事。</p>
+              <button class="button secondary" type="button" data-open-chat>質問する</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="harbor-journey">
+          <div class="harbor-section-head is-centered">
+            <span class="harbor-kicker">Candidate journey</span>
+            <h2>応募前質問から面談までを短くする。</h2>
+          </div>
+          <div class="harbor-journey-line">
+            <article><span>01</span><strong>求人を見る</strong><p>働き方と役割を確認。</p></article>
+            <article><span>02</span><strong>質問する</strong><p>未経験、評価、勤務条件を聞く。</p></article>
+            <article><span>03</span><strong>面談へ進む</strong><p>30分のカジュアル面談へ。</p></article>
+          </div>
+        </section>
+
+        <section class="harbor-entry" id="entry">
+          <div>
+            <span class="harbor-kicker">Entry support</span>
+            <h2>迷っている人ほど、先に質問できる導線が効く。</h2>
+            <p>応募フォームだけではなく、チャットで不安を受け止めることで、候補者の離脱を減らします。</p>
+          </div>
+          <div class="harbor-entry-card">
+            <strong>応募前によくある質問</strong>
+            <ul>
+              <li>未経験でも応募できますか？</li>
+              <li>リモート勤務はどれくらいありますか？</li>
+              <li>選考前に話だけ聞けますか？</li>
+            </ul>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> 応募前質問を開く</button>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer-inner">
-          <a href="./index.html">デモ一覧へ戻る</a>
-          <span>Harbor Careers LP demo</span>
-        </div>
+      <footer class="footer harbor-footer">
+        <div class="footer-inner"><a href="./index.html">デモ一覧へ戻る</a><span>Harbor Careers LP demo</span></div>
       </footer>
     </div>
     <div data-chatbot data-bot="recruit"></div>

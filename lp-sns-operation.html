@@ -3,114 +3,109 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SNS運用代行LPデモ</title>
-    <meta name="description" content="投稿カレンダー、分析、制作、改善レポートまでを見せるSNS運用代行LPデモ。">
+    <title>SocialCraft Studio | SNS運用代行LPデモ</title>
+    <meta name="description" content="投稿停止の原因診断から制作カレンダー、分析改善までを見せるSNS運用代行LPデモ。">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="theme-sns layout-sns">
+  <body class="layout-socialcraft">
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar socialcraft-topbar">
         <div class="topbar-inner">
-          <a class="brand" href="./index.html"><span class="brand-mark">N</span><span>Narrative SNS Lab</span></a>
+          <a class="brand socialcraft-brand" href="./index.html"><span class="brand-mark socialcraft-brand-mark">S</span><span>SocialCraft Studio</span></a>
           <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="メニュー"><i data-lucide="menu"></i></button>
-          <nav class="navlinks" data-nav>
-            <a href="#calendar">カレンダー</a>
+          <nav class="navlinks socialcraft-nav" data-nav>
+            <a href="#plan">制作</a>
             <a href="#analytics">分析</a>
-            <a href="#contact">診断</a>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断</button>
+            <a href="#audit">診断</a>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="sparkles"></i> SNS診断</button>
           </nav>
         </div>
       </header>
 
-      <main class="page-v6 lw-sns">
-        <section class="lw-sns-hero">
-          <div class="lw-hero-copy">
-            <span class="lw-kicker"><i data-lucide="calendar-days"></i> Social planner</span>
-            <h1>投稿計画、予約投稿、分析を1つの運用ボードで見せる</h1>
-            <p>投稿計画、予約投稿、分析レポートを並べ、代行の作業内容を画面で伝えます。</p>
-            <button class="button primary" type="button" data-open-chat><i data-lucide="bot"></i> アカウント診断</button>
-          </div>
-          <div class="lw-social-planner" aria-label="SNS投稿プランナー">
-            <header><strong>May content plan</strong><span>7 posts scheduled</span></header>
-            <div class="lw-mini-calendar">
-              <article>Mon<b>比較</b></article><article>Tue<b></b></article><article>Wed<b>事例</b></article><article>Thu<b>リール</b></article><article>Fri<b>分析</b></article>
+      <main class="socialcraft-page">
+        <section class="socialcraft-hero">
+          <div class="socialcraft-hero-copy">
+            <span class="socialcraft-kicker">SNS operation LP</span>
+            <h1>投稿が止まる理由を、先に見える化する。</h1>
+            <p>ネタ出し、制作、承認、予約投稿、数字確認まで。SNS運用代行の中身を、投稿カレンダーとして見せるLPです。</p>
+            <div class="socialcraft-actions">
+              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> アカウント診断</button>
+              <a class="button secondary" href="#plan"><i data-lucide="calendar-days"></i> 制作フローを見る</a>
             </div>
-            <footer><span>Best time</span><strong>19:30</strong><em>保存率 +18%</em></footer>
+          </div>
+          <figure class="socialcraft-hero-image">
+            <img src="./assets/images/socialcraft-hero.webp" width="1586" height="992" alt="SNS投稿カレンダーと分析カードを並べた制作デスク">
+          </figure>
+        </section>
+
+        <section class="socialcraft-strip" aria-label="対応範囲">
+          <span>投稿企画</span>
+          <span>台本作成</span>
+          <span>画像指示</span>
+          <span>予約投稿</span>
+          <span>数字改善</span>
+        </section>
+
+        <section class="socialcraft-plan" id="plan">
+          <div class="socialcraft-section-copy">
+            <span class="socialcraft-kicker">Content lane</span>
+            <h2>毎週の運用を、4つのレーンに分ける。</h2>
+          </div>
+          <div class="socialcraft-lane-grid">
+            <article><span>Draft</span><strong>投稿テーマ</strong><p>比較、失敗、事例、教育の型でネタ切れを防ぐ。</p></article>
+            <article><span>Creative</span><strong>画像・台本</strong><p>作るものを明確にして制作待ちを減らす。</p></article>
+            <article><span>Review</span><strong>承認待ち</strong><p>修正点と公開日を同じ場所で管理。</p></article>
+            <article><span>Report</span><strong>数字確認</strong><p>保存率、クリック、問い合わせを次回へ反映。</p></article>
           </div>
         </section>
 
-        <section class="lw-sns-connect">
-          <span>Instagram</span>
-          <span>TikTok</span>
-          <span>X</span>
-          <span>YouTube Shorts</span>
-          <span>LINE導線</span>
-        </section>
-
-        <section class="lw-sns-calendar" id="calendar">
+        <section class="socialcraft-analytics" id="analytics">
+          <figure>
+            <img src="./assets/images/socialcraft-analytics.webp" width="1672" height="941" alt="SNS運用の分析ダッシュボード">
+          </figure>
           <div>
-            <span class="section-label">Calendar</span>
-            <h2>カレンダーで代行範囲を見せる</h2>
-            <p>企画、下書き、承認、予約、数字確認までを同じボードに置きます。</p>
-          </div>
-          <div class="lw-kanban-calendar">
-            <article><span>Draft</span><strong>比較投稿</strong><p>購入前の失敗</p></article>
-            <article><span>Ready</span><strong>事例投稿</strong><p>導入後の変化</p></article>
-            <article><span>Review</span><strong>リール台本</strong><p>15秒の導入訴求</p></article>
-            <article><span>Report</span><strong>数字確認</strong><p>保存・クリック</p></article>
-          </div>
-        </section>
-
-        <section class="lw-sns-analytics" id="analytics">
-          <div class="lw-analytics-screen" aria-label="SNS分析ダッシュボード">
-            <aside><strong>Channels</strong><span>Instagram</span><span>TikTok</span><span>X</span></aside>
-            <main>
-              <div><article><strong>25.4K</strong><span>Reach</span></article><article><strong>8.7%</strong><span>Save rate</span></article><article><strong>3件</strong><span>Lead</span></article></div>
-              <div class="lw-line-chart"><span></span><span></span><span></span><span></span><span></span></div>
-            </main>
-          </div>
-          <div>
-            <span class="section-label">Analytics</span>
-            <h2>数字は次の投稿を決めるために見せる</h2>
-            <p>フォロワー数ではなく、保存、プロフィールクリック、LP遷移、問い合わせを並べます。</p>
-          </div>
-        </section>
-
-        <section class="lw-sns-caption">
-          <div>
-            <span class="section-label">AI caption</span>
-            <h2>ネタ切れを防ぐ制作ボード</h2>
-            <p>投稿案、台本、画像指示、承認状態をまとめ、毎週同じ型で制作します。</p>
-          </div>
-          <div class="lw-caption-box" aria-label="投稿制作ボード">
-            <label>投稿テーマ<input type="text" value="購入前によくある失敗" aria-label="投稿テーマ"></label>
-            <div><button type="button">比較</button><button type="button">事例</button><button type="button">教育</button></div>
-            <p>「安さで選ぶ前に確認したい3つのポイント」から、保存されるチェックリスト投稿を作成。</p>
-          </div>
-        </section>
-
-        <section class="lw-sns-contact" id="contact">
-          <div class="lw-audit-dashboard">
-            <header>
-              <span class="section-label">First diagnosis</span>
-              <h2>投稿停止の原因を、分析画面で見せる</h2>
-              <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断を開く</button>
-            </header>
-            <div class="lw-audit-grid">
-              <article class="score"><span>継続スコア</span><strong>42</strong><p>週2本で失速。承認待ちがボトルネック。</p></article>
-              <article><span>停止要因</span><strong>投稿テーマ不足</strong><p>比較・事例・教育の型を補充</p></article>
-              <article><span>導線課題</span><strong>LPクリック弱い</strong><p>固定投稿とプロフィールを調整</p></article>
-              <article><span>次の一手</span><strong>7日分を先に作る</strong><p>承認待ちまでカレンダー化</p></article>
+            <span class="socialcraft-kicker">Analytics</span>
+            <h2>フォロワー数ではなく、売上に近い数字を見る。</h2>
+            <p>保存、プロフィールクリック、LP遷移、問い合わせ。投稿の反応を次の制作テーマに戻すことで、運用代行の価値を見せます。</p>
+            <div class="socialcraft-score-grid">
+              <article><strong>8.7%</strong><span>保存率</span></article>
+              <article><strong>23</strong><span>プロフィール遷移</span></article>
+              <article><strong>4件</strong><span>相談発生</span></article>
             </div>
+          </div>
+        </section>
+
+        <section class="socialcraft-service">
+          <div class="socialcraft-section-copy is-centered">
+            <span class="socialcraft-kicker">Service</span>
+            <h2>投稿を作るだけで終わらせない。</h2>
+          </div>
+          <div class="socialcraft-service-grid">
+            <article><i data-lucide="lightbulb"></i><strong>訴求整理</strong><p>商品、悩み、購入前不安から投稿テーマを作る。</p></article>
+            <article><i data-lucide="pen-line"></i><strong>制作進行</strong><p>下書き、画像指示、承認待ちを止めない。</p></article>
+            <article><i data-lucide="chart-no-axes-combined"></i><strong>改善レポート</strong><p>数字から次の一手を出す。</p></article>
+          </div>
+        </section>
+
+        <section class="socialcraft-audit" id="audit">
+          <div class="socialcraft-audit-panel">
+            <div>
+              <span class="socialcraft-kicker">First audit</span>
+              <h2>まず、投稿停止の原因を診断する。</h2>
+              <p>投稿ネタ不足、制作待ち、承認遅れ、導線不足。止まっている原因を切り分けて、7日分の制作計画に落とします。</p>
+            </div>
+            <div class="socialcraft-audit-cards">
+              <article><span>停止要因</span><strong>テーマ不足</strong></article>
+              <article><span>優先施策</span><strong>比較投稿</strong></article>
+              <article><span>初回目標</span><strong>7日分作成</strong></article>
+            </div>
+            <button class="button primary" type="button" data-open-chat><i data-lucide="message-circle"></i> SNS診断を開く</button>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer-inner">
-          <a href="./index.html">デモ一覧へ戻る</a>
-          <span>Narrative SNS Lab LP demo</span>
-        </div>
+      <footer class="footer socialcraft-footer">
+        <div class="footer-inner"><a href="./index.html">デモ一覧へ戻る</a><span>SocialCraft Studio LP demo</span></div>
       </footer>
     </div>
     <div data-chatbot data-bot="sns"></div>
